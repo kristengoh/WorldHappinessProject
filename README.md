@@ -7,8 +7,9 @@
 
 **Outline**  
 	▪ Proposal - PDF  
-  ▪ Data Source Files - Excel & CSV  
-  ▪ Data Wrangling - Python  
-  ▪ Data Analysis - R Studio  
-  ▪ Data Visualization - Tableau  
-  ▪ Presentation - PDF & Link to Vimeo Video  
+   Data Source Files - Excel & CSV 
+  1. Project  Proposal- PDF
+  3. Data Wrangling - Python  
+  4. Data Analysis - R Studio  
+  5. Data Visualization - Tableau  
+  6. Presentation - PDF & Link to Vimeo Video  
