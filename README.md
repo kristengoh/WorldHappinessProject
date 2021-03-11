@@ -6,8 +6,7 @@
   ▪ Analyze potential country developement indicators that influence happiness  
 
 **Outline**  
-	▪ Proposal - PDF  
-   Data Source Files - Excel & CSV 
+  ▪ Data Source Files - Excel & CSV 
   1. Project  Proposal- PDF
   3. Data Wrangling - Python  
   4. Data Analysis - R Studio  
