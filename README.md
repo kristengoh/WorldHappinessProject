@@ -11,4 +11,4 @@
   ▪ Data Wrangling - Python  
   ▪ Data Analysis - R Studio  
   ▪ Data Visualization - Tableau  
-  ▪ Presentation - PDF  
+  ▪ Presentation - PDF & Link to Vimeo Video  
