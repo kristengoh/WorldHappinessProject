@@ -7,7 +7,7 @@
 
 **Outline**  
 	▪ Proposal - PDF  
-  ▪ Data Source Files - Excel  
+  ▪ Data Source Files - Excel & CSV  
   ▪ Data Wrangling - Python  
   ▪ Data Analysis - R Studio  
   ▪ Data Visualization - Tableau  
