@@ -1,4 +1,4 @@
-# Understanding the Indicators of World Happiness Project
+# Understanding the Indicators of World Happiness
     by Kristen Goh and Jonathan Goh
 
 **Project Goal**  
