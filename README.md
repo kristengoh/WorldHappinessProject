@@ -2,8 +2,8 @@
     by Kristen Goh and Jonathan Goh
 
 **Project Goal**  
-   	--▪ Understand how happiness differs in countries and regions around the world  
-    --▪ Analyze potential country developement indicators that influence happiness  
+   	▪ Understand how happiness differs in countries and regions around the world  
+    ▪ Analyze potential country developement indicators that influence happiness  
  
   **Outline**  
    Data Source Files (Excel & CSV)   
