@@ -1,0 +1,2110 @@
+# A tibble: 6 x 30
+  Country Region `Happiness Rank` `Happiness Scor~ `Standard Error` `Economy (GDP p~ Family `Health (Life E~
+  <chr>   <chr>             <dbl>            <dbl>            <dbl>            <dbl>  <dbl>            <dbl>
+1 Switze~ Weste~                1             7.59           0.0341             1.40   1.35            0.941
+2 Switze~ Weste~                1             7.59           0.0341             1.40   1.35            0.941
+3 Switze~ Weste~                1             7.59           0.0341             1.40   1.35            0.941
+4 Iceland Weste~                2             7.56           0.0488             1.30   1.40            0.948
+5 Iceland Weste~                2             7.56           0.0488             1.30   1.40            0.948
+6 Iceland Weste~                2             7.56           0.0488             1.30   1.40            0.948
+# ... with 22 more variables: Freedom <dbl>, `Trust (Government Corruption)` <dbl>, Generosity <dbl>, `Dystopia
+#   Residual` <dbl>, Location <chr>, UID <chr>, Period <dbl>, Dim1 <chr>, LifeExpectancyIndicator <chr>,
+#   LifeExpectancy <dbl>, InfantMortalityIndicator <chr>, InfantMortality <chr>, SuicideRatesIndicator <chr>,
+#   SuicideRates <dbl>, AlcoholSubstanceAbuseIndicator <chr>, AlcoholSubstanceAbuse <dbl>,
+#   MortalityRatePoisoningIndicator <chr>, MortalityRatePoisoning <dbl>, TobaccoIndicator <chr>, Tobacco <dbl>,
+#   DiseaseDeathIndicator <chr>, DiseaseDeath <dbl>
+  [1] "Switzerland"            "Iceland"                "Denmark"                "Norway"                
+  [5] "Canada"                 "Finland"                "Netherlands"            "Sweden"                
+  [9] "New Zealand"            "Australia"              "Israel"                 "Costa Rica"            
+ [13] "Austria"                "Mexico"                 "Brazil"                 "Luxembourg"            
+ [17] "Ireland"                "Belgium"                "Oman"                   "Singapore"             
+ [21] "Panama"                 "Germany"                "Chile"                  "Qatar"                 
+ [25] "France"                 "Argentina"              "Colombia"               "Thailand"              
+ [29] "Saudi Arabia"           "Spain"                  "Malta"                  "Kuwait"                
+ [33] "El Salvador"            "Slovakia"               "Japan"                  "Bahrain"               
+ [37] "Italy"                  "Paraguay"               "Kazakhstan"             "Slovenia"              
+ [41] "Lithuania"              "Peru"                   "Belarus"                "Poland"                
+ [45] "Malaysia"               "Croatia"                "Jamaica"                "Cyprus"                
+ [49] "Algeria"                "Mauritius"              "Estonia"                "Indonesia"             
+ [53] "Kyrgyzstan"             "Nigeria"                "Azerbaijan"             "Pakistan"              
+ [57] "China"                  "Romania"                "Serbia"                 "Portugal"              
+ [61] "Latvia"                 "Philippines"            "Morocco"                "Mozambique"            
+ [65] "Albania"                "Bosnia and Herzegovina" "Lesotho"                "Dominican Republic"    
+ [69] "Mongolia"               "Greece"                 "Lebanon"                "Hungary"               
+ [73] "Bangladesh"             "Iraq"                   "South Africa"           "Ghana"                 
+ [77] "Liberia"                "India"                  "Haiti"                  "Nepal"                 
+ [81] "Ethiopia"               "Sierra Leone"           "Kenya"                  "Armenia"               
+ [85] "Botswana"               "Myanmar"                "Georgia"                "Malawi"                
+ [89] "Sri Lanka"              "Cameroon"               "Bulgaria"               "Egypt"                 
+ [93] "Mali"                   "Comoros"                "Senegal"                "Niger"                 
+ [97] "Cambodia"               "Madagascar"             "Chad"                   "Burkina Faso"          
+[101] "Rwanda"                 "Benin"                  "Burundi"               
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  2.905   4.565   5.399   5.517   6.574   7.587 
+# A tibble: 6 x 12
+  Dim1  Location Region Country `Happiness Scor~ InfantMortality LifeExpectancy MortalityRatePo~ SuicideRates
+  <chr> <chr>    <chr>  <chr>              <dbl> <chr>                    <dbl>            <dbl>        <dbl>
+1 Both~ Switzer~ Weste~ Switze~             7.59 3.78 [3.64-3.9~           82.6            0.099         17.1
+2 Male  Switzer~ Weste~ Switze~             7.59 4.1 [3.92-4.27]           80.6            0.1           22  
+3 Fema~ Switzer~ Weste~ Switze~             7.59 3.46 [3.3-3.62]           84.5            0.095         12.3
+4 Both~ Iceland  Weste~ Iceland             7.56 1.76 [1.49-2.0~           82.1            0.21          14  
+5 Male  Iceland  Weste~ Iceland             7.56 1.91 [1.61-2.2~           80.7            0.28          22.3
+6 Fema~ Iceland  Weste~ Iceland             7.56 1.61 [1.36-1.9~           83.6            0.15           5.7
+# ... with 3 more variables: AlcoholSubstanceAbuse <dbl>, Tobacco <dbl>, DiseaseDeath <dbl>
+# A tibble: 6 x 12
+  Dim1  Location Region Country `Happiness Scor~ InfantMortality LifeExpectancy MortalityRatePo~ SuicideRates
+  <chr> <chr>    <chr>  <chr>              <dbl> <chr>                    <dbl>            <dbl>        <dbl>
+1 Both~ Switzer~ Weste~ Switze~             7.59 3.78 [3.64-3.9~           82.6            0.099         17.1
+2 Both~ Iceland  Weste~ Iceland             7.56 1.76 [1.49-2.0~           82.1            0.21          14  
+3 Both~ Denmark  Weste~ Denmark             7.53 3.49 [3.33-3.6~           80.6            0.16          11.9
+4 Both~ Norway   Weste~ Norway              7.52 2.21 [2.09-2.3~           82.0            0.18          12.4
+5 Both~ Canada   North~ Canada              7.43 4.61 [4.52-4.6~           81.8            0.31          12.5
+6 Both~ Finland  Weste~ Finland             7.41 2.03 [1.92-2.1~           81.2            0.23          14.4
+# ... with 3 more variables: AlcoholSubstanceAbuse <dbl>, Tobacco <dbl>, DiseaseDeath <dbl>
+
+	studentized Breusch-Pagan test
+
+data:  model
+BP = 9.7201, df = 12, p-value = 0.6405
+
+
+	studentized Breusch-Pagan test
+
+data:  lmMod1
+BP = 7.5128, df = 1, p-value = 0.006126
+
+Box-Cox Transformation
+
+34 data points used to estimate Lambda
+
+Input data summary:
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  3.819   5.200   6.127   6.149   7.127   7.587 
+
+Largest/Smallest: 1.99 
+Sample Skewness: -0.278 
+
+Estimated Lambda: 1.7 
+
+
+	studentized Breusch-Pagan test
+
+data:  lmMod_edit
+BP = 0.50902, df = 1, p-value = 0.4756
+
+
+	studentized Breusch-Pagan test
+
+data:  lmMod2
+BP = 0.060914, df = 1, p-value = 0.8051
+
+
+	studentized Breusch-Pagan test
+
+data:  lmMod3
+BP = 0.9335, df = 1, p-value = 0.334
+
+
+	studentized Breusch-Pagan test
+
+data:  lmMod4
+BP = 7.0026, df = 1, p-value = 0.008139
+
+
+	studentized Breusch-Pagan test
+
+data:  lmMod_edit2
+BP = 0.72654, df = 1, p-value = 0.394
+
+
+	studentized Breusch-Pagan test
+
+data:  lmMod5
+BP = 0.89808, df = 1, p-value = 0.3433
+
+
+	studentized Breusch-Pagan test
+
+data:  lmMod6
+BP = 0.1114, df = 1, p-value = 0.7386
+
+
+	studentized Breusch-Pagan test
+
+data:  lmMod7
+BP = 0.87828, df = 1, p-value = 0.3487
+
+
+	studentized Breusch-Pagan test
+
+data:  lmMod8
+BP = 0.95184, df = 1, p-value = 0.3293
+
+
+	studentized Breusch-Pagan test
+
+data:  lmMod9
+BP = 4.2574, df = 1, p-value = 0.03908
+
+
+	studentized Breusch-Pagan test
+
+data:  lmMod_edit9
+BP = 0.0016802, df = 1, p-value = 0.9673
+
+
+	studentized Breusch-Pagan test
+
+data:  lmMod10
+BP = 0.56185, df = 1, p-value = 0.4535
+
+
+	studentized Breusch-Pagan test
+
+data:  lmMod11
+BP = 4.2574, df = 1, p-value = 0.03908
+
+
+	studentized Breusch-Pagan test
+
+data:  lmMod12
+BP = 3.8356, df = 1, p-value = 0.05017
+
+
+	studentized Breusch-Pagan test
+
+data:  lmMod13
+BP = 2.1142, df = 1, p-value = 0.1459
+
+
+Call:
+lm(formula = HappinessScore ~ BasicSanitization + FertilityRate + 
+    BussinessScore + Cellular + FoodInsecurity + HealthExpGDP + 
+    HealthExpGov + RenewableEnergy + RuralPop + SecEduc + BasicDrinkWater + 
+    Undernourishment, data = WorldBank_V2)
+
+Coefficients:
+      (Intercept)  BasicSanitization      FertilityRate     BussinessScore           Cellular     FoodInsecurity  
+         2.196430           0.011233           0.288243           0.008098          -0.002679          -0.028223  
+     HealthExpGDP       HealthExpGov    RenewableEnergy           RuralPop            SecEduc    BasicDrinkWater  
+        -0.005217           0.076645           0.009082          -0.022262           0.010716           0.007748  
+ Undernourishment  
+         0.062256  
+
+
+ASSESSMENT OF THE LINEAR MODEL ASSUMPTIONS
+USING THE GLOBAL TEST ON 4 DEGREES-OF-FREEDOM:
+Level of Significance =  0.05 
+
+Call:
+ gvlma(x = model) 
+
+                     Value p-value                Decision
+Global Stat        4.30038 0.36688 Assumptions acceptable.
+Skewness           0.04812 0.82637 Assumptions acceptable.
+Kurtosis           0.01034 0.91900 Assumptions acceptable.
+Link Function      3.53340 0.06014 Assumptions acceptable.
+Heteroscedasticity 0.70852 0.39994 Assumptions acceptable.
+
+Call:
+lm(formula = dist_newM ~ BasicSanitization, data = WorldBank3)
+
+Coefficients:
+      (Intercept)  BasicSanitization  
+           3.2661             0.1007  
+
+
+ASSESSMENT OF THE LINEAR MODEL ASSUMPTIONS
+USING THE GLOBAL TEST ON 4 DEGREES-OF-FREEDOM:
+Level of Significance =  0.05 
+
+Call:
+ gvlma(x = lmMod_edit) 
+
+                     Value p-value                Decision
+Global Stat        4.04690  0.3997 Assumptions acceptable.
+Skewness           0.20267  0.6526 Assumptions acceptable.
+Kurtosis           2.43138  0.1189 Assumptions acceptable.
+Link Function      1.39957  0.2368 Assumptions acceptable.
+Heteroscedasticity 0.01329  0.9082 Assumptions acceptable.
+
+Call:
+lm(formula = HappinessScore ~ BussinessScore, data = WorldBank_V2)
+
+Coefficients:
+   (Intercept)  BussinessScore  
+       1.67406         0.06044  
+
+
+ASSESSMENT OF THE LINEAR MODEL ASSUMPTIONS
+USING THE GLOBAL TEST ON 4 DEGREES-OF-FREEDOM:
+Level of Significance =  0.05 
+
+Call:
+ gvlma(x = lmMod2) 
+
+                    Value p-value                Decision
+Global Stat        3.2529  0.5164 Assumptions acceptable.
+Skewness           0.1099  0.7403 Assumptions acceptable.
+Kurtosis           0.4641  0.4957 Assumptions acceptable.
+Link Function      2.4227  0.1196 Assumptions acceptable.
+Heteroscedasticity 0.2563  0.6127 Assumptions acceptable.
+
+Call:
+lm(formula = HappinessScore ~ Cellular, data = WorldBank_V2)
+
+Coefficients:
+(Intercept)     Cellular  
+     3.4828       0.0177  
+
+
+ASSESSMENT OF THE LINEAR MODEL ASSUMPTIONS
+USING THE GLOBAL TEST ON 4 DEGREES-OF-FREEDOM:
+Level of Significance =  0.05 
+
+Call:
+ gvlma(x = lmMod3) 
+
+                    Value p-value                Decision
+Global Stat        6.3156  0.1768 Assumptions acceptable.
+Skewness           0.9336  0.3339 Assumptions acceptable.
+Kurtosis           0.6480  0.4208 Assumptions acceptable.
+Link Function      3.4281  0.0641 Assumptions acceptable.
+Heteroscedasticity 1.3060  0.2531 Assumptions acceptable.
+
+Call:
+lm(formula = HappinessScore ~ FertilityRate, data = WorldBank_V2)
+
+Coefficients:
+  (Intercept)  FertilityRate  
+       6.9703        -0.5691  
+
+
+ASSESSMENT OF THE LINEAR MODEL ASSUMPTIONS
+USING THE GLOBAL TEST ON 4 DEGREES-OF-FREEDOM:
+Level of Significance =  0.05 
+
+Call:
+ gvlma(x = lmMod4) 
+
+                    Value p-value                Decision
+Global Stat        4.2873 0.36851 Assumptions acceptable.
+Skewness           0.1995 0.65516 Assumptions acceptable.
+Kurtosis           3.2286 0.07236 Assumptions acceptable.
+Link Function      0.6264 0.42866 Assumptions acceptable.
+Heteroscedasticity 0.2328 0.62942 Assumptions acceptable.
+
+Call:
+lm(formula = dist_newM ~ FertilityRate, data = WorldBank3)
+
+Coefficients:
+  (Intercept)  FertilityRate  
+       14.618         -1.117  
+
+
+ASSESSMENT OF THE LINEAR MODEL ASSUMPTIONS
+USING THE GLOBAL TEST ON 4 DEGREES-OF-FREEDOM:
+Level of Significance =  0.05 
+
+Call:
+ gvlma(x = lmMod_edit2) 
+
+                     Value p-value                Decision
+Global Stat        2.65579  0.6170 Assumptions acceptable.
+Skewness           0.12981  0.7186 Assumptions acceptable.
+Kurtosis           2.08641  0.1486 Assumptions acceptable.
+Link Function      0.38679  0.5340 Assumptions acceptable.
+Heteroscedasticity 0.05279  0.8183 Assumptions acceptable.
+
+Call:
+lm(formula = HappinessScore ~ FoodInsecurity, data = WorldBank_V2)
+
+Coefficients:
+   (Intercept)  FoodInsecurity  
+       6.51083        -0.03626  
+
+
+ASSESSMENT OF THE LINEAR MODEL ASSUMPTIONS
+USING THE GLOBAL TEST ON 4 DEGREES-OF-FREEDOM:
+Level of Significance =  0.05 
+
+Call:
+ gvlma(x = lmMod5) 
+
+                      Value   p-value                   Decision
+Global Stat        17.07888 0.0018659 Assumptions NOT satisfied!
+Skewness            0.04122 0.8391063    Assumptions acceptable.
+Kurtosis            5.07262 0.0243066 Assumptions NOT satisfied!
+Link Function      11.07576 0.0008746 Assumptions NOT satisfied!
+Heteroscedasticity  0.88927 0.3456746    Assumptions acceptable.
+
+Call:
+lm(formula = HappinessScore ~ HealthExpGDP, data = WorldBank_V2)
+
+Coefficients:
+ (Intercept)  HealthExpGDP  
+      4.1168        0.3729  
+
+
+ASSESSMENT OF THE LINEAR MODEL ASSUMPTIONS
+USING THE GLOBAL TEST ON 4 DEGREES-OF-FREEDOM:
+Level of Significance =  0.05 
+
+Call:
+ gvlma(x = lmMod6) 
+
+                     Value p-value                   Decision
+Global Stat        6.18361  0.1858    Assumptions acceptable.
+Skewness           0.49094  0.4835    Assumptions acceptable.
+Kurtosis           0.07952  0.7780    Assumptions acceptable.
+Link Function      4.30496  0.0380 Assumptions NOT satisfied!
+Heteroscedasticity 1.30820  0.2527    Assumptions acceptable.
+
+Call:
+lm(formula = HappinessScore ~ HealthExpGov, data = WorldBank_V2)
+
+Coefficients:
+ (Intercept)  HealthExpGov  
+       3.840         0.151  
+
+
+ASSESSMENT OF THE LINEAR MODEL ASSUMPTIONS
+USING THE GLOBAL TEST ON 4 DEGREES-OF-FREEDOM:
+Level of Significance =  0.05 
+
+Call:
+ gvlma(x = lmMod7) 
+
+                      Value p-value                   Decision
+Global Stat        4.491155 0.34360    Assumptions acceptable.
+Skewness           0.002927 0.95685    Assumptions acceptable.
+Kurtosis           0.020425 0.88636    Assumptions acceptable.
+Link Function      4.107754 0.04269 Assumptions NOT satisfied!
+Heteroscedasticity 0.360049 0.54848    Assumptions acceptable.
+
+Call:
+lm(formula = HappinessScore ~ RenewableEnergy, data = WorldBank_V2)
+
+Coefficients:
+    (Intercept)  RenewableEnergy  
+        6.15777         -0.02113  
+
+
+ASSESSMENT OF THE LINEAR MODEL ASSUMPTIONS
+USING THE GLOBAL TEST ON 4 DEGREES-OF-FREEDOM:
+Level of Significance =  0.05 
+
+Call:
+ gvlma(x = lmMod8) 
+
+                       Value p-value                   Decision
+Global Stat        8.8012845 0.06626    Assumptions acceptable.
+Skewness           6.2529311 0.01240 Assumptions NOT satisfied!
+Kurtosis           0.0008002 0.97743    Assumptions acceptable.
+Link Function      0.7090483 0.39976    Assumptions acceptable.
+Heteroscedasticity 1.8385049 0.17513    Assumptions acceptable.
+
+Call:
+lm(formula = HappinessScore ~ RuralPop, data = WorldBank_V2)
+
+Coefficients:
+(Intercept)     RuralPop  
+    6.90346     -0.03719  
+
+
+ASSESSMENT OF THE LINEAR MODEL ASSUMPTIONS
+USING THE GLOBAL TEST ON 4 DEGREES-OF-FREEDOM:
+Level of Significance =  0.05 
+
+Call:
+ gvlma(x = lmMod9) 
+
+                     Value p-value                Decision
+Global Stat        4.37928 0.35710 Assumptions acceptable.
+Skewness           2.88025 0.08967 Assumptions acceptable.
+Kurtosis           0.06127 0.80450 Assumptions acceptable.
+Link Function      0.10225 0.74914 Assumptions acceptable.
+Heteroscedasticity 1.33551 0.24783 Assumptions acceptable.
+
+Call:
+lm(formula = HappinessScore ~ SecEduc, data = WorldBank_V2)
+
+Coefficients:
+(Intercept)      SecEduc  
+    3.08881      0.03049  
+
+
+ASSESSMENT OF THE LINEAR MODEL ASSUMPTIONS
+USING THE GLOBAL TEST ON 4 DEGREES-OF-FREEDOM:
+Level of Significance =  0.05 
+
+Call:
+ gvlma(x = lmMod10) 
+
+                       Value p-value                Decision
+Global Stat        1.682e+00  0.7940 Assumptions acceptable.
+Skewness           5.734e-01  0.4489 Assumptions acceptable.
+Kurtosis           1.071e+00  0.3007 Assumptions acceptable.
+Link Function      2.310e-06  0.9988 Assumptions acceptable.
+Heteroscedasticity 3.745e-02  0.8465 Assumptions acceptable.
+
+Call:
+lm(formula = HappinessScore ~ UrbanPop, data = WorldBank_V2)
+
+Coefficients:
+(Intercept)     UrbanPop  
+    3.18406      0.03719  
+
+
+ASSESSMENT OF THE LINEAR MODEL ASSUMPTIONS
+USING THE GLOBAL TEST ON 4 DEGREES-OF-FREEDOM:
+Level of Significance =  0.05 
+
+Call:
+ gvlma(x = lmMod11) 
+
+                     Value p-value                Decision
+Global Stat        4.37928 0.35710 Assumptions acceptable.
+Skewness           2.88025 0.08967 Assumptions acceptable.
+Kurtosis           0.06127 0.80450 Assumptions acceptable.
+Link Function      0.10225 0.74914 Assumptions acceptable.
+Heteroscedasticity 1.33551 0.24783 Assumptions acceptable.
+
+Call:
+lm(formula = HappinessScore ~ BasicDrinkWater, data = WorldBank_V2)
+
+Coefficients:
+    (Intercept)  BasicDrinkWater  
+        1.09466          0.04968  
+
+
+ASSESSMENT OF THE LINEAR MODEL ASSUMPTIONS
+USING THE GLOBAL TEST ON 4 DEGREES-OF-FREEDOM:
+Level of Significance =  0.05 
+
+Call:
+ gvlma(x = lmMod12) 
+
+                       Value   p-value                   Decision
+Global Stat        2.497e+01 5.091e-05 Assumptions NOT satisfied!
+Skewness           8.485e-04 9.768e-01    Assumptions acceptable.
+Kurtosis           4.226e+00 3.981e-02 Assumptions NOT satisfied!
+Link Function      1.982e+01 8.497e-06 Assumptions NOT satisfied!
+Heteroscedasticity 9.247e-01 3.362e-01    Assumptions acceptable.
+
+Call:
+lm(formula = HappinessScore ~ BasicDrinkWater, data = WorldBank)
+
+Coefficients:
+    (Intercept)  BasicDrinkWater  
+        0.99874          0.05099  
+
+
+ASSESSMENT OF THE LINEAR MODEL ASSUMPTIONS
+USING THE GLOBAL TEST ON 4 DEGREES-OF-FREEDOM:
+Level of Significance =  0.05 
+
+Call:
+ gvlma(x = lmMod13) 
+
+                       Value   p-value                   Decision
+Global Stat        2.188e+01 2.118e-04 Assumptions NOT satisfied!
+Skewness           8.555e-05 9.926e-01    Assumptions acceptable.
+Kurtosis           3.867e+00 4.923e-02 Assumptions NOT satisfied!
+Link Function      1.693e+01 3.871e-05 Assumptions NOT satisfied!
+Heteroscedasticity 1.079e+00 2.990e-01    Assumptions acceptable.
+                  HappinessScore BasicDrinkWater BasicSanitization BussinessScore Cellular FertilityRate
+HappinessScore                 1              NA                NA             NA       NA            NA
+BasicDrinkWater               NA               1                NA             NA       NA            NA
+BasicSanitization             NA              NA                 1             NA       NA            NA
+BussinessScore                NA              NA                NA              1       NA            NA
+Cellular                      NA              NA                NA             NA        1            NA
+FertilityRate                 NA              NA                NA             NA       NA             1
+FoodInsecurity                NA              NA                NA             NA       NA            NA
+HealthExpGDP                  NA              NA                NA             NA       NA            NA
+HealthExpGov                  NA              NA                NA             NA       NA            NA
+PopFem                        NA              NA                NA             NA       NA            NA
+PopMale                       NA              NA                NA             NA       NA            NA
+PrimarySchool                 NA              NA                NA             NA       NA            NA
+RenewableEnergy               NA              NA                NA             NA       NA            NA
+RuralPop                      NA              NA                NA             NA       NA            NA
+SecEduc                       NA              NA                NA             NA       NA            NA
+Undernourishment              NA              NA                NA             NA       NA            NA
+UrbanPop                      NA              NA                NA             NA       NA            NA
+                  FoodInsecurity HealthExpGDP HealthExpGov PopFem PopMale PrimarySchool RenewableEnergy RuralPop
+HappinessScore                NA           NA           NA     NA      NA            NA              NA       NA
+BasicDrinkWater               NA           NA           NA     NA      NA            NA              NA       NA
+BasicSanitization             NA           NA           NA     NA      NA            NA              NA       NA
+BussinessScore                NA           NA           NA     NA      NA            NA              NA       NA
+Cellular                      NA           NA           NA     NA      NA            NA              NA       NA
+FertilityRate                 NA           NA           NA     NA      NA            NA              NA       NA
+FoodInsecurity                 1           NA           NA     NA      NA            NA              NA       NA
+HealthExpGDP                  NA            1           NA     NA      NA            NA              NA       NA
+HealthExpGov                  NA           NA            1     NA      NA            NA              NA       NA
+PopFem                        NA           NA           NA      1      NA            NA              NA       NA
+PopMale                       NA           NA           NA     NA       1            NA              NA       NA
+PrimarySchool                 NA           NA           NA     NA      NA             1              NA       NA
+RenewableEnergy               NA           NA           NA     NA      NA            NA               1       NA
+RuralPop                      NA           NA           NA     NA      NA            NA              NA        1
+SecEduc                       NA           NA           NA     NA      NA            NA              NA       NA
+Undernourishment              NA           NA           NA     NA      NA            NA              NA       NA
+UrbanPop                      NA           NA           NA     NA      NA            NA              NA       NA
+                  SecEduc Undernourishment UrbanPop
+HappinessScore         NA               NA       NA
+BasicDrinkWater        NA               NA       NA
+BasicSanitization      NA               NA       NA
+BussinessScore         NA               NA       NA
+Cellular               NA               NA       NA
+FertilityRate          NA               NA       NA
+FoodInsecurity         NA               NA       NA
+HealthExpGDP           NA               NA       NA
+HealthExpGov           NA               NA       NA
+PopFem                 NA               NA       NA
+PopMale                NA               NA       NA
+PrimarySchool          NA               NA       NA
+RenewableEnergy        NA               NA       NA
+RuralPop               NA               NA       NA
+SecEduc                 1               NA       NA
+Undernourishment       NA                1       NA
+UrbanPop               NA               NA        1
+            Country                      Region Code HappinessScore AdolescentSchool ArmedForces ArmedForces2
+1           Albania  Central and Eastern Europe  ALB          4.959          3.05841  0.65913853         8500
+2           Austria              Western Europe  AUT          7.200          1.97000  0.47861016        21350
+3           Belgium              Western Europe  BEL          6.937          2.41607  0.72686771        36350
+4          Cambodia           Southeastern Asia  KHM          3.819         13.30809  2.24323018       191300
+7    Czech Republic  Central and Eastern Europe  CZE          6.505          0.21226  0.46932735        25050
+8           Denmark              Western Europe  DNK          7.527          2.14711  0.56629507        16600
+9           Ecuador Latin America and Caribbean  ECU          5.975          1.54987  0.53298392        40750
+11          Estonia  Central and Eastern Europe  EST          5.429          0.77113  0.93270939         6400
+14          Georgia  Central and Eastern Europe  GEO          4.297          0.39258  1.24597033        26050
+15           Greece              Western Europe  GRC          4.857          3.59568  3.04525883       146950
+17          Hungary  Central and Eastern Europe  HUN          4.800          3.00155  0.83384772        38500
+21           Latvia  Central and Eastern Europe  LVA          5.098          1.85964  0.52657989         5310
+23       Luxembourg              Western Europe  LUX          6.946          4.95872  0.53050398         1500
+25        Mauritius          Sub-Saharan Africa  MUS          5.477          7.07469  0.42234976         2550
+26           Mexico Latin America and Caribbean  MEX          7.187          2.42926  0.62725503       336050
+27       Mozambique          Sub-Saharan Africa  MOZ          4.971         43.10912  0.09631464        11200
+28           Norway              Western Europe  NOR          7.522          0.32904  0.90330672        24950
+30           Serbia  Central and Eastern Europe  SRB          5.123          0.04920  0.90902809        28150
+31         Slovenia  Central and Eastern Europe  SVN          5.848          0.47288  1.30576714        13200
+NA             <NA>                        <NA> <NA>             NA               NA          NA           NA
+NA.1           <NA>                        <NA> <NA>             NA               NA          NA           NA
+NA.2           <NA>                        <NA> <NA>             NA               NA          NA           NA
+NA.3           <NA>                        <NA> <NA>             NA               NA          NA           NA
+NA.4           <NA>                        <NA> <NA>             NA               NA          NA           NA
+NA.5           <NA>                        <NA> <NA>             NA               NA          NA           NA
+NA.6           <NA>                        <NA> <NA>             NA               NA          NA           NA
+NA.7           <NA>                        <NA> <NA>             NA               NA          NA           NA
+     BasicDrinkWater BasicSanitization BussinessScore Cellular Electricity FertilityRate FoodInsecurity
+1           91.00102          97.69103       58.07559 117.6590   100.00000         1.677           38.8
+2          100.00000          99.97671       78.81665 155.2150   100.00000         1.490            5.5
+3          100.00000          99.48606       72.42806 113.1660   100.00000         1.700            9.5
+4           75.38111          53.38575       52.87481 134.3340    68.81590         2.593           48.9
+7           99.88009          99.13538       76.10923 117.4810   100.00000         1.570            5.8
+8          100.00000          99.59723       84.50938 124.4440   100.00000         1.710            5.9
+9           93.05378          86.09980       57.10316  79.8407    98.82588         2.499           23.3
+11          99.71054          99.13278       80.53864 144.7210   100.00000         1.580            9.5
+14          97.91408          90.49064       78.30005 137.9340    99.99189         2.050           31.8
+15         100.00000          98.97597       66.92296 117.8890   100.00000         1.330           15.8
+17          99.97053          97.99545       71.06578 101.2540   100.00000         1.450           11.3
+21          98.52336          91.41686       79.13397 129.6510   100.00000         1.700            9.9
+23          99.92517          97.61074       69.15342 142.3580   100.00000         1.470            4.7
+25          99.86648          95.50608       76.02546 139.9250    97.34584         1.360           13.0
+26          98.37579          89.41728       71.64492  88.3718    99.00000         2.215           27.4
+27          51.19878          26.86935       52.81247  74.4580    24.00000         5.062           68.4
+28         100.00000          98.05673       81.83183 109.9050   100.00000         1.720            4.8
+30          86.28549          97.63536       69.96245 103.1420    99.90000         1.460           11.4
+31          99.53378          99.10933       74.71274 113.6500   100.00000         1.570           12.3
+NA                NA                NA             NA       NA          NA            NA             NA
+NA.1              NA                NA             NA       NA          NA            NA             NA
+NA.2              NA                NA             NA       NA          NA            NA             NA
+NA.3              NA                NA             NA       NA          NA            NA             NA
+NA.4              NA                NA             NA       NA          NA            NA             NA
+NA.5              NA                NA             NA       NA          NA            NA             NA
+NA.6              NA                NA             NA       NA          NA            NA             NA
+NA.7              NA                NA             NA       NA          NA            NA             NA
+       GDPGrowth HealthExpGDP HealthExpGov LegalRightsIndex Manufactoring NationalIncome  Pop1564     Pop65
+1     2.21875223     2.731354     8.991549                6      5.671491     0.91198485 68.70472 12.626548
+2     1.01450159     7.511853    14.691256                4     16.690036     0.53112472 67.03954 18.840478
+3     2.04145901     7.897839    14.701943                4     12.693334     2.33325849 64.85353 18.142309
+4     7.03608718     1.344651     6.633149               10     16.013772     5.93219486 64.27864  4.119181
+7     5.38838084     5.955934    14.283198                7     23.921677     6.70806494 66.89084 17.994977
+8     2.34259111     8.609555    15.789342                8     12.403445     2.65562015 64.10940 19.047444
+9     0.09887261     4.241140    10.688430                1     14.423508    -0.20528496 64.33874  6.602453
+11    1.84488668     4.782454    12.188362                7     13.804991     2.90857232 65.04750 18.822040
+14    3.02220738     2.821514     9.608580                9      8.864594     3.30608960 66.68472 14.348925
+15   -0.43783383     4.558318     8.510997                2      8.658240     1.17414811 64.61915 20.821004
+17    3.81942838     4.670061     9.223676                9     20.231106     4.23624491 68.08258 17.468802
+21    4.00687403     3.336608     8.792086                9     10.472745     3.86914564 65.38710 19.518600
+23    4.30643149     4.465108    10.741470                3      4.634450     0.03956811 69.62793 13.994223
+25    3.55307173     2.375491     9.458420                6     13.036573     2.88973599 70.64566  9.954060
+26    3.29315153     3.077319    11.179375               10     17.161630     2.99934376 65.63932  6.724716
+27    6.72327878     1.956918     5.554438                1      8.192260     8.61780290 51.67991  2.899941
+28    1.96712844     8.663884    17.580814                5      6.873817    -0.49591962 65.73465 16.303033
+30    1.80605927     5.087393    11.918012                6     14.767928    -0.30509542 66.87910 16.956684
+31    2.21008161     6.063872    12.448796                3     19.939383     0.41909719 67.31676 18.013286
+NA            NA           NA           NA               NA            NA             NA       NA        NA
+NA.1          NA           NA           NA               NA            NA             NA       NA        NA
+NA.2          NA           NA           NA               NA            NA             NA       NA        NA
+NA.3          NA           NA           NA               NA            NA             NA       NA        NA
+NA.4          NA           NA           NA               NA            NA             NA       NA        NA
+NA.5          NA           NA           NA               NA            NA             NA       NA        NA
+NA.6          NA           NA           NA               NA            NA             NA       NA        NA
+NA.7          NA           NA           NA               NA            NA             NA       NA        NA
+       PopFem  PopMale PrimarySchool RenewableEnergy RuralPop   SecEduc SevereFoodInsecurity  TradeGDP
+1    49.09380 50.90620       2.20127       38.615210   42.566  99.15678                 10.0  71.80104
+2    51.04483 48.95517       0.47045       34.394992   42.285  96.22541                  1.1 102.42732
+3    50.84454 49.15546       0.97579        9.201641    2.124  95.04216                  3.1 154.19255
+4    51.22590 48.77410       4.43741       64.923776   77.812  48.17112                 16.9 127.86407
+7    50.86512 49.13488       0.19085       14.828562   26.523  98.93683                  0.7 155.17566
+8    50.27316 49.72684       0.05955       33.170277   12.474  97.59461                  1.0 104.04823
+9    49.94481 50.05519       0.98589       13.816686   36.602 101.14980                  7.1  45.24388
+11   53.22657 46.77343       2.45569       27.476833   31.584 107.41864                  0.9 149.84157
+14   52.24498 47.75502       0.26285       28.662539   42.552 101.77565                  7.0  98.76882
+15   50.91008 49.08992       2.17935       17.170048   21.954  94.03724                  2.6  63.05516
+17   52.47748 47.52252       2.86345       15.559362   29.500  93.80418                  1.4 167.23995
+21   54.16036 45.83964       2.03865       38.098017   32.020  95.57563                  0.6 122.28361
+23   49.81111 50.18889       1.05806        9.031314    9.821  97.20722                  1.8 408.36201
+25   50.47112 49.52888       1.07612       11.537362   59.000  84.16783                  5.2 105.00960
+26   51.09550 48.90450       0.57450        9.215213   20.715  92.96433                  8.0  71.08909
+27   51.58628 48.41372       8.48541       86.400509   65.600  22.94938                 40.7  93.90871
+28   49.65471 50.34529       0.13350       57.772002   18.909  99.65188                  1.1  69.85917
+30   50.98365 49.01635       0.79377       21.173885   44.304 101.81807                  1.7  97.39577
+31   50.30651 49.69349       0.45091       20.877396   46.219  98.99796                  0.9 146.29586
+NA         NA       NA            NA              NA       NA        NA                   NA        NA
+NA.1       NA       NA            NA              NA       NA        NA                   NA        NA
+NA.2       NA       NA            NA              NA       NA        NA                   NA        NA
+NA.3       NA       NA            NA              NA       NA        NA                   NA        NA
+NA.4       NA       NA            NA              NA       NA        NA                   NA        NA
+NA.5       NA       NA            NA              NA       NA        NA                   NA        NA
+NA.6       NA       NA            NA              NA       NA        NA                   NA        NA
+NA.7       NA       NA            NA              NA       NA        NA                   NA        NA
+     TradeinServices Undernourishment Unemployment UrbanGrowth UrbanPop Grand Total dist_newM
+1          34.387351              4.9      17.1930   1.4847643   57.434    9596.217  8.359663
+2          27.966225              2.5       5.7227   1.4490015   57.715   22496.022 16.277929
+3          46.148256              2.5       8.4820   0.6233859   97.876   37496.353 15.244026
+4          34.333189             15.7       0.3931   3.3724482   22.188  192383.289  5.151152
+7          22.886063              2.5       5.0464   0.3232375   73.477   26199.388 13.604676
+8          40.517497              2.5       6.2779   0.8390472   87.526   17737.839 17.600744
+9           5.639893              8.8       3.6157   1.8342155   63.398   41682.179 11.695361
+11         42.710283              2.5       6.1866   0.2806315   68.416    7603.056  9.848744
+14         31.898607              5.9      16.5059   0.8229190   57.448   27199.373  6.425222
+15         26.364603              2.5      24.8971  -0.2171285   78.046  148000.049  8.049042
+17         31.615100              2.5       6.8132   0.1501414   70.500   39645.548  7.877432
+21         27.340450              2.5       9.8730  -0.7774373   67.980    6444.626  8.790209
+23        304.276146              2.5       6.6686   2.6875314   90.179    3165.107 15.278961
+25         40.829206              5.8       7.4096  -0.1380241   41.000    3659.331 10.006101
+26          4.743144              5.6       4.3127   1.6101496   79.285  337047.665 16.226192
+27         23.519765             31.0       3.4264   4.3639403   34.400   12147.385  8.396504
+28         23.047176              2.5       4.2959   1.4883378   81.091   26029.021 17.580209
+30         21.861135              4.1      17.6597  -0.2916657   55.696   29210.064  8.868527
+31         26.401933              2.5       8.9623   0.4925662   53.781   14337.945 11.254816
+NA                NA               NA           NA          NA       NA          NA        NA
+NA.1              NA               NA           NA          NA       NA          NA        NA
+NA.2              NA               NA           NA          NA       NA          NA        NA
+NA.3              NA               NA           NA          NA       NA          NA        NA
+NA.4              NA               NA           NA          NA       NA          NA        NA
+NA.5              NA               NA           NA          NA       NA          NA        NA
+NA.6              NA               NA           NA          NA       NA          NA        NA
+NA.7              NA               NA           NA          NA       NA          NA        NA
+ [ reached 'max' / getOption("max.print") -- omitted 4 rows ]
+No Studentized residuals with Bonferroni p < 0.05
+Largest |rstudent|:
+    rstudent unadjusted p-value Bonferroni p
+156 2.393048           0.021147           NA
+Potentially influential observations of
+	 lm(formula = HappinessScore ~ BasicSanitization + FertilityRate +      BussinessScore + Cellular + FoodInsecurity + HealthExpGDP +      HealthExpGov + RenewableEnergy + RuralPop + SecEduc + BasicDrinkWater +      Undernourishment, data = WorldBank_V2) :
+
+    dfb.1_ dfb.BscS dfb.FrtR dfb.BssS dfb.Clll dfb.FdIn dfb.HEGD dfb.HlEG dfb.RnwE dfb.RrlP dfb.ScEd dfb.BsDW
+2    0.00  -0.02     0.00     0.01     0.00    -0.02     0.00     0.00    -0.01     0.00    -0.01     0.01   
+36   0.16   0.55     0.18     0.01    -0.03     0.90    -0.12    -0.39     0.59    -0.30    -0.05    -0.45   
+50   0.04   0.04    -0.06    -0.01     0.06     0.02    -0.11     0.28     0.04     0.00    -0.16    -0.03   
+88   0.02  -1.12_*  -0.02     0.17     0.28     0.17     0.10     0.06    -0.39    -0.09     0.26     0.35   
+94  -0.04   0.00     0.02    -0.01    -0.02    -0.01    -0.03     0.03     0.03     0.00    -0.01     0.05   
+105  0.01  -0.03    -0.03     0.02     0.03     0.06     0.06     0.00    -0.18     0.09    -0.01    -0.03   
+121 -0.02   0.02     0.04     0.00     0.03    -0.01    -0.01     0.01    -0.01     0.01     0.03    -0.01   
+122  0.00   0.00     0.01    -0.01    -0.01    -0.01    -0.01    -0.02     0.02    -0.02    -0.10     0.06   
+171 -0.06  -0.14    -0.08    -0.18    -0.11    -0.07    -0.04    -0.07     0.37     0.20     0.06     0.27   
+    dfb.Undr dffit   cov.r   cook.d hat  
+2    0.01    -0.04    2.04_*  0.00   0.34
+36  -1.20_*   1.77_*  1.30    0.23   0.53
+50  -0.06     0.42    2.48_*  0.01   0.49
+88  -0.48     1.42    2.24_*  0.15   0.60
+94   0.04     0.08    2.14_*  0.00   0.37
+105 -0.01    -0.21    2.01_*  0.00   0.35
+121  0.01     0.06    1.94_*  0.00   0.31
+122 -0.04    -0.16    1.89_*  0.00   0.30
+171 -0.14     0.66    1.97_*  0.03   0.43
+Potentially influential observations of
+	 lm(formula = HappinessScore ~ BasicSanitization + FertilityRate +      BussinessScore + Cellular + FoodInsecurity + HealthExpGDP +      HealthExpGov + RenewableEnergy + RuralPop + SecEduc + BasicDrinkWater +      Undernourishment, data = WorldBank_V3) :
+
+    dfb.1_ dfb.BscS dfb.FrtR dfb.BssS dfb.Clll dfb.FdIn dfb.HEGD dfb.HlEG dfb.RnwE dfb.RrlP dfb.ScEd dfb.BsDW
+2    0.06   0.39    -0.04    -0.18    -0.02     0.39    -0.07    -0.11     0.28    -0.02     0.11    -0.28   
+49   0.02   0.04    -0.04    -0.01     0.03     0.00    -0.07     0.17     0.03     0.00    -0.11    -0.02   
+91   0.34  -0.01    -0.14     0.05     0.12     0.18     0.20    -0.26    -0.13    -0.09     0.08    -0.43   
+102  0.00  -0.02    -0.01     0.01     0.02     0.01     0.02     0.00    -0.07     0.03     0.00     0.00   
+118  0.03  -0.02    -0.05     0.00    -0.04     0.01     0.01    -0.01     0.01    -0.02    -0.04     0.01   
+119  0.02  -0.02    -0.02     0.01     0.00     0.01     0.01     0.03    -0.03     0.01     0.09    -0.06   
+164 -0.07   0.38     0.06     0.08    -0.07    -0.08     0.04    -0.16     0.10    -0.02    -0.23    -0.14   
+168 -0.03  -0.48    -0.20    -0.37    -0.19     0.08    -0.10    -0.21     0.83     0.36     0.23     0.55   
+228 -0.06   0.01    -0.01     0.01     0.03     0.00     0.04    -0.12     0.00    -0.02    -0.04     0.07   
+252 -0.07   0.14     0.09    -0.03    -0.21    -0.04    -0.06     0.04     0.02     0.11    -0.03     0.05   
+    dfb.Undr dffit   cov.r   cook.d hat  
+2   -0.23     0.65    2.36_*  0.03   0.49
+49  -0.02     0.27    2.65_*  0.01   0.49
+91  -0.35    -0.68    1.97_*  0.04   0.43
+102  0.00    -0.08    2.24_*  0.00   0.39
+118 -0.01    -0.08    2.02_*  0.00   0.32
+119  0.02     0.16    2.05_*  0.00   0.34
+164  0.40     0.73    2.65_*  0.04   0.55
+168 -0.63     1.73_*  0.95    0.22   0.48
+228  0.07    -0.19    2.62_*  0.00   0.48
+252  0.05     0.30    2.10_*  0.01   0.37
+Potentially influential observations of
+	 lm(formula = HappinessScore ~ BasicSanitization + FertilityRate +      BussinessScore + Cellular + FoodInsecurity + HealthExpGDP +      HealthExpGov + RenewableEnergy + RuralPop + SecEduc + BasicDrinkWater +      Undernourishment, data = WorldBank_V4) :
+
+    dfb.1_ dfb.BscS dfb.FrtR dfb.BssS dfb.Clll dfb.FdIn dfb.HEGD dfb.HlEG dfb.RnwE dfb.RrlP dfb.ScEd dfb.BsDW
+49   0.01   0.01    -0.01     0.00     0.01     0.00    -0.02     0.05     0.00     0.00    -0.03    -0.01   
+91   0.26   0.01    -0.10     0.05     0.10     0.13     0.15    -0.19    -0.12    -0.08     0.05    -0.34   
+102  0.00   0.06     0.02    -0.04    -0.06    -0.03    -0.08    -0.02     0.23    -0.09     0.01     0.01   
+113 -0.10   0.03     0.16     0.03     0.05     0.01    -0.02     0.00    -0.03    -0.04     0.09     0.01   
+118  0.07  -0.04    -0.12    -0.01    -0.09     0.02     0.03    -0.02     0.03    -0.03    -0.10     0.03   
+119  0.03  -0.03    -0.03     0.01     0.00     0.01     0.01     0.04    -0.03     0.02     0.13    -0.08   
+164  0.00   0.00     0.00     0.00     0.00     0.00     0.00     0.00     0.00     0.00     0.00     0.00   
+227  0.02  -0.01     0.00    -0.01    -0.01     0.00    -0.02     0.04     0.01     0.01     0.02    -0.02   
+251 -0.09   0.16     0.11    -0.04    -0.26    -0.04    -0.08     0.05     0.03     0.14    -0.03     0.07   
+    dfb.Undr dffit cov.r   cook.d hat  
+49   0.00     0.08  2.76_*  0.00   0.50
+91  -0.23    -0.53  2.18_*  0.02   0.43
+102 -0.03     0.27  2.31_*  0.01   0.42
+113  0.02     0.21  2.00_*  0.00   0.33
+118 -0.02    -0.20  2.00_*  0.00   0.33
+119  0.02     0.23  2.04_*  0.00   0.34
+164  0.00    -0.01  3.61_*  0.00   0.62
+227 -0.03     0.06  2.73_*  0.00   0.49
+251  0.05     0.37  2.06_*  0.01   0.38
+
+Call:
+lm(formula = HappinessScore ~ BasicSanitization + FertilityRate + 
+    BussinessScore + Cellular + FoodInsecurity + HealthExpGDP + 
+    HealthExpGov + RenewableEnergy + RuralPop + SecEduc + BasicDrinkWater + 
+    Undernourishment, data = WorldBank_V4)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.96752 -0.27996  0.03198  0.27244  1.28501 
+
+Coefficients:
+                   Estimate Std. Error t value Pr(>|t|)    
+(Intercept)       -0.325578   2.214147  -0.147 0.883835    
+BasicSanitization  0.025897   0.014024   1.847 0.072220 .  
+FertilityRate      0.416806   0.189743   2.197 0.033899 *  
+BussinessScore     0.009496   0.013342   0.712 0.480778    
+Cellular          -0.001686   0.004431  -0.380 0.705657    
+FoodInsecurity    -0.041549   0.011918  -3.486 0.001204 ** 
+HealthExpGDP       0.012512   0.063895   0.196 0.845739    
+HealthExpGov       0.087840   0.023013   3.817 0.000459 ***
+RenewableEnergy    0.002848   0.006130   0.465 0.644717    
+RuralPop          -0.019761   0.007057  -2.800 0.007826 ** 
+SecEduc            0.008201   0.007442   1.102 0.277034    
+BasicDrinkWater    0.014035   0.019904   0.705 0.484803    
+Undernourishment   0.148048   0.037155   3.985 0.000279 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.544 on 40 degrees of freedom
+  (207 observations deleted due to missingness)
+Multiple R-squared:  0.8305,	Adjusted R-squared:  0.7796 
+F-statistic: 16.33 on 12 and 40 DF,  p-value: 8.484e-12
+
+# A tibble: 6 x 12
+  Country Region `Happiness Rank` `Happiness Scor~ `Standard Error` `Economy (GDP p~ Family `Health (Life E~
+  <chr>   <chr>             <dbl>            <dbl>            <dbl>            <dbl>  <dbl>            <dbl>
+1 Switze~ Weste~                1             7.59           0.0341             1.40   1.35            0.941
+2 Iceland Weste~                2             7.56           0.0488             1.30   1.40            0.948
+3 Denmark Weste~                3             7.53           0.0333             1.33   1.36            0.875
+4 Norway  Weste~                4             7.52           0.0388             1.46   1.33            0.885
+5 Canada  North~                5             7.43           0.0355             1.33   1.32            0.906
+6 Finland Weste~                6             7.41           0.0314             1.29   1.32            0.889
+# ... with 4 more variables: Freedom <dbl>, `Trust (Government Corruption)` <dbl>, Generosity <dbl>, `Dystopia
+#   Residual` <dbl>
+
+	Bartlett test of homogeneity of variances
+
+data:  HappinessScore by Region
+Bartlett's K-squared = 27.188, df = 9, p-value = 0.001302
+
+Analysis of Deviance Table (Type II tests)
+
+Response: HappinessScore
+           Df      F    Pr(>F)    
+Region      9 183.91 < 2.2e-16 ***
+Residuals 148                     
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+	Pairwise comparisons using t tests with non-pooled SD 
+
+data:  Happiness2$HappinessScore and Happiness2$Region 
+
+                                Australia and New Zealand Central and Eastern Europe Eastern Asia
+Central and Eastern Europe      1.5e-15                   -                          -           
+Eastern Asia                    0.03326                   1.00000                    -           
+Latin America and Caribbean     1.4e-05                   0.00475                    1.00000     
+Middle East and Northern Africa 1.5e-05                   1.00000                    1.00000     
+North America                   1.00000                   0.31873                    0.07328     
+Southeastern Asia               0.01151                   1.00000                    1.00000     
+Southern Asia                   0.00071                   0.53571                    0.30174     
+Sub-Saharan Africa              < 2e-16                   2.6e-09                    0.03097     
+Western Europe                  0.15773                   9.6e-06                    0.13967     
+                                Latin America and Caribbean Middle East and Northern Africa North America
+Central and Eastern Europe      -                           -                               -            
+Eastern Asia                    -                           -                               -            
+Latin America and Caribbean     -                           -                               -            
+Middle East and Northern Africa 0.73337                     -                               -            
+North America                   0.32793                     0.00448                         -            
+Southeastern Asia               1.00000                     1.00000                         0.01998      
+Southern Asia                   0.00253                     0.89397                         0.00484      
+Sub-Saharan Africa              3.5e-11                     0.00535                         0.18305      
+Western Europe                  1.00000                     0.00766                         1.00000      
+                                Southeastern Asia Southern Asia Sub-Saharan Africa
+Central and Eastern Europe      -                 -             -                 
+Eastern Asia                    -                 -             -                 
+Latin America and Caribbean     -                 -             -                 
+Middle East and Northern Africa -                 -             -                 
+North America                   -                 -             -                 
+Southeastern Asia               -                 -             -                 
+Southern Asia                   1.00000           -             -                 
+Sub-Saharan Africa              0.34400           1.00000       -                 
+Western Europe                  0.10006           8.1e-05       7.3e-12           
+
+P value adjustment method: bonferroni 
+`summarise()` ungrouping output (override with `.groups` argument)
+
+	Bartlett test of homogeneity of variances
+
+data:  HappinessScore by Region2
+Bartlett's K-squared = 14.841, df = 5, p-value = 0.01106
+
+Analysis of Deviance Table (Type II tests)
+
+Response: HappinessScore
+           Df      F    Pr(>F)    
+Region2     5 145.68 < 2.2e-16 ***
+Residuals 152                     
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+	Pairwise comparisons using t tests with non-pooled SD 
+
+data:  Happiness3$HappinessScore and Happiness3$Region2 
+
+                            Africa  Asia    Australia and New Zealand Europe Latin America and Caribbean
+Asia                        0.1996  -       -                         -      -                          
+Australia and New Zealand   < 2e-16 1.2e-09 -                         -      -                          
+Europe                      3.9e-09 0.0290  1.6e-12                   -      -                          
+Latin America and Caribbean 7.4e-09 0.0025  4.8e-06                   1.0000 -                          
+North America               0.0194  0.0043  1.0000                    0.0910 0.1093                     
+
+P value adjustment method: bonferroni 
+`summarise()` ungrouping output (override with `.groups` argument)
+# A tibble: 6 x 30
+  Country Region `Happiness Rank` `Happiness Scor~ `Standard Error` `Economy (GDP p~ Family `Health (Life E~
+  <chr>   <chr>             <dbl>            <dbl>            <dbl>            <dbl>  <dbl>            <dbl>
+1 Switze~ Weste~                1             7.59           0.0341             1.40   1.35            0.941
+2 Switze~ Weste~                1             7.59           0.0341             1.40   1.35            0.941
+3 Switze~ Weste~                1             7.59           0.0341             1.40   1.35            0.941
+4 Iceland Weste~                2             7.56           0.0488             1.30   1.40            0.948
+5 Iceland Weste~                2             7.56           0.0488             1.30   1.40            0.948
+6 Iceland Weste~                2             7.56           0.0488             1.30   1.40            0.948
+# ... with 22 more variables: Freedom <dbl>, `Trust (Government Corruption)` <dbl>, Generosity <dbl>, `Dystopia
+#   Residual` <dbl>, Location <chr>, UID <chr>, Period <dbl>, Dim1 <chr>, LifeExpectancyIndicator <chr>,
+#   LifeExpectancy <dbl>, InfantMortalityIndicator <chr>, InfantMortality <chr>, SuicideRatesIndicator <chr>,
+#   SuicideRates <dbl>, AlcoholSubstanceAbuseIndicator <chr>, AlcoholSubstanceAbuse <dbl>,
+#   MortalityRatePoisoningIndicator <chr>, MortalityRatePoisoning <dbl>, TobaccoIndicator <chr>, Tobacco <dbl>,
+#   DiseaseDeathIndicator <chr>, DiseaseDeath <dbl>
+geom_point: na.rm = FALSE
+stat_summary: fun.data = NULL, fun = new("standardGeneric", .Data = function (x, ...) 
+standardGeneric("mean"), generic = "mean", package = "base", group = list(), valueClass = character(0), signature = "x", default = new("derivedDefaultMethod", .Data = function (x, ...) 
+UseMethod("mean"), target = new("signature", .Data = "ANY", names = "x", package = "methods"), defined = new("signature", .Data = "ANY", names = "x", package = "methods"), generic = "mean"), skeleton = (new("derivedDefaultMethod", .Data = function (x, ...) 
+UseMethod("mean"), target = new("signature", .Data = "ANY", names = "x", package = "methods"), defined = new("signature", .Data = "ANY", names = "x", package = "methods"), generic = "mean"))(x, ...)), fun.max = NULL, fun.min = NULL, fun.args = list(), na.rm = FALSE, orientation = NA
+position_identity 
+<ggproto object: Class CoordFlip, CoordCartesian, Coord, gg>
+    aspect: function
+    backtransform_range: function
+    clip: on
+    default: FALSE
+    distance: function
+    expand: TRUE
+    is_free: function
+    is_linear: function
+    labels: function
+    limits: list
+    modify_scales: function
+    range: function
+    render_axis_h: function
+    render_axis_v: function
+    render_bg: function
+    render_fg: function
+    setup_data: function
+    setup_layout: function
+    setup_panel_guides: function
+    setup_panel_params: function
+    setup_params: function
+    train_panel_guides: function
+    transform: function
+    super:  <ggproto object: Class CoordFlip, CoordCartesian, Coord, gg>
+geom_point: na.rm = FALSE
+stat_summary: fun.data = NULL, fun = new("standardGeneric", .Data = function (x, ...) 
+standardGeneric("mean"), generic = "mean", package = "base", group = list(), valueClass = character(0), signature = "x", default = new("derivedDefaultMethod", .Data = function (x, ...) 
+UseMethod("mean"), target = new("signature", .Data = "ANY", names = "x", package = "methods"), defined = new("signature", .Data = "ANY", names = "x", package = "methods"), generic = "mean"), skeleton = (new("derivedDefaultMethod", .Data = function (x, ...) 
+UseMethod("mean"), target = new("signature", .Data = "ANY", names = "x", package = "methods"), defined = new("signature", .Data = "ANY", names = "x", package = "methods"), generic = "mean"))(x, ...)), fun.max = NULL, fun.min = NULL, fun.args = list(), na.rm = FALSE, orientation = NA
+position_identity 
+<ggproto object: Class CoordFlip, CoordCartesian, Coord, gg>
+    aspect: function
+    backtransform_range: function
+    clip: on
+    default: FALSE
+    distance: function
+    expand: TRUE
+    is_free: function
+    is_linear: function
+    labels: function
+    limits: list
+    modify_scales: function
+    range: function
+    render_axis_h: function
+    render_axis_v: function
+    render_bg: function
+    render_fg: function
+    setup_data: function
+    setup_layout: function
+    setup_panel_guides: function
+    setup_panel_params: function
+    setup_params: function
+    train_panel_guides: function
+    transform: function
+    super:  <ggproto object: Class CoordFlip, CoordCartesian, Coord, gg>
+                  HappinessScore BasicDrinkWater BasicSanitization BussinessScore Cellular FertilityRate
+HappinessScore                 1              NA                NA             NA       NA            NA
+BasicDrinkWater               NA               1                NA             NA       NA            NA
+BasicSanitization             NA              NA                 1             NA       NA            NA
+BussinessScore                NA              NA                NA              1       NA            NA
+Cellular                      NA              NA                NA             NA        1            NA
+FertilityRate                 NA              NA                NA             NA       NA             1
+FoodInsecurity                NA              NA                NA             NA       NA            NA
+HealthExpGDP                  NA              NA                NA             NA       NA            NA
+HealthExpGov                  NA              NA                NA             NA       NA            NA
+PopFem                        NA              NA                NA             NA       NA            NA
+PopMale                       NA              NA                NA             NA       NA            NA
+PrimarySchool                 NA              NA                NA             NA       NA            NA
+RenewableEnergy               NA              NA                NA             NA       NA            NA
+RuralPop                      NA              NA                NA             NA       NA            NA
+SecEduc                       NA              NA                NA             NA       NA            NA
+Undernourishment              NA              NA                NA             NA       NA            NA
+UrbanPop                      NA              NA                NA             NA       NA            NA
+                  FoodInsecurity HealthExpGDP HealthExpGov PopFem PopMale PrimarySchool RenewableEnergy RuralPop
+HappinessScore                NA           NA           NA     NA      NA            NA              NA       NA
+BasicDrinkWater               NA           NA           NA     NA      NA            NA              NA       NA
+BasicSanitization             NA           NA           NA     NA      NA            NA              NA       NA
+BussinessScore                NA           NA           NA     NA      NA            NA              NA       NA
+Cellular                      NA           NA           NA     NA      NA            NA              NA       NA
+FertilityRate                 NA           NA           NA     NA      NA            NA              NA       NA
+FoodInsecurity                 1           NA           NA     NA      NA            NA              NA       NA
+HealthExpGDP                  NA            1           NA     NA      NA            NA              NA       NA
+HealthExpGov                  NA           NA            1     NA      NA            NA              NA       NA
+PopFem                        NA           NA           NA      1      NA            NA              NA       NA
+PopMale                       NA           NA           NA     NA       1            NA              NA       NA
+PrimarySchool                 NA           NA           NA     NA      NA             1              NA       NA
+RenewableEnergy               NA           NA           NA     NA      NA            NA               1       NA
+RuralPop                      NA           NA           NA     NA      NA            NA              NA        1
+SecEduc                       NA           NA           NA     NA      NA            NA              NA       NA
+Undernourishment              NA           NA           NA     NA      NA            NA              NA       NA
+UrbanPop                      NA           NA           NA     NA      NA            NA              NA       NA
+                  SecEduc Undernourishment UrbanPop
+HappinessScore         NA               NA       NA
+BasicDrinkWater        NA               NA       NA
+BasicSanitization      NA               NA       NA
+BussinessScore         NA               NA       NA
+Cellular               NA               NA       NA
+FertilityRate          NA               NA       NA
+FoodInsecurity         NA               NA       NA
+HealthExpGDP           NA               NA       NA
+HealthExpGov           NA               NA       NA
+PopFem                 NA               NA       NA
+PopMale                NA               NA       NA
+PrimarySchool          NA               NA       NA
+RenewableEnergy        NA               NA       NA
+RuralPop               NA               NA       NA
+SecEduc                 1               NA       NA
+Undernourishment       NA                1       NA
+UrbanPop               NA               NA        1
+# A tibble: 6 x 12
+  Dim1  Location Region Country `Happiness Scor~ InfantMortality LifeExpectancy MortalityRatePo~ SuicideRates
+  <chr> <chr>    <chr>  <chr>              <dbl> <chr>                    <dbl>            <dbl>        <dbl>
+1 Both~ Switzer~ Weste~ Switze~             7.59 3.78 [3.64-3.9~           82.6            0.099         17.1
+2 Male  Switzer~ Weste~ Switze~             7.59 4.1 [3.92-4.27]           80.6            0.1           22  
+3 Fema~ Switzer~ Weste~ Switze~             7.59 3.46 [3.3-3.62]           84.5            0.095         12.3
+4 Both~ Iceland  Weste~ Iceland             7.56 1.76 [1.49-2.0~           82.1            0.21          14  
+5 Male  Iceland  Weste~ Iceland             7.56 1.91 [1.61-2.2~           80.7            0.28          22.3
+6 Fema~ Iceland  Weste~ Iceland             7.56 1.61 [1.36-1.9~           83.6            0.15           5.7
+# ... with 3 more variables: AlcoholSubstanceAbuse <dbl>, Tobacco <dbl>, DiseaseDeath <dbl>
+# A tibble: 6 x 12
+  Dim1  Location Region Country `Happiness Scor~ InfantMortality LifeExpectancy MortalityRatePo~ SuicideRates
+  <chr> <chr>    <chr>  <chr>              <dbl> <chr>                    <dbl>            <dbl>        <dbl>
+1 Both~ Switzer~ Weste~ Switze~             7.59 3.78 [3.64-3.9~           82.6            0.099         17.1
+2 Both~ Iceland  Weste~ Iceland             7.56 1.76 [1.49-2.0~           82.1            0.21          14  
+3 Both~ Denmark  Weste~ Denmark             7.53 3.49 [3.33-3.6~           80.6            0.16          11.9
+4 Both~ Norway   Weste~ Norway              7.52 2.21 [2.09-2.3~           82.0            0.18          12.4
+5 Both~ Canada   North~ Canada              7.43 4.61 [4.52-4.6~           81.8            0.31          12.5
+6 Both~ Finland  Weste~ Finland             7.41 2.03 [1.92-2.1~           81.2            0.23          14.4
+# ... with 3 more variables: AlcoholSubstanceAbuse <dbl>, Tobacco <dbl>, DiseaseDeath <dbl>
+geom_point: na.rm = FALSE
+stat_summary: fun.data = NULL, fun = new("standardGeneric", .Data = function (x, ...) 
+standardGeneric("mean"), generic = "mean", package = "base", group = list(), valueClass = character(0), signature = "x", default = new("derivedDefaultMethod", .Data = function (x, ...) 
+UseMethod("mean"), target = new("signature", .Data = "ANY", names = "x", package = "methods"), defined = new("signature", .Data = "ANY", names = "x", package = "methods"), generic = "mean"), skeleton = (new("derivedDefaultMethod", .Data = function (x, ...) 
+UseMethod("mean"), target = new("signature", .Data = "ANY", names = "x", package = "methods"), defined = new("signature", .Data = "ANY", names = "x", package = "methods"), generic = "mean"))(x, ...)), fun.max = NULL, fun.min = NULL, fun.args = list(), na.rm = FALSE, orientation = NA
+position_identity 
+<ggproto object: Class CoordFlip, CoordCartesian, Coord, gg>
+    aspect: function
+    backtransform_range: function
+    clip: on
+    default: FALSE
+    distance: function
+    expand: TRUE
+    is_free: function
+    is_linear: function
+    labels: function
+    limits: list
+    modify_scales: function
+    range: function
+    render_axis_h: function
+    render_axis_v: function
+    render_bg: function
+    render_fg: function
+    setup_data: function
+    setup_layout: function
+    setup_panel_guides: function
+    setup_panel_params: function
+    setup_params: function
+    train_panel_guides: function
+    transform: function
+    super:  <ggproto object: Class CoordFlip, CoordCartesian, Coord, gg>
+# A tibble: 6 x 30
+  Country Region `Happiness Rank` `Happiness Scor~ `Standard Error` `Economy (GDP p~ Family `Health (Life E~
+  <chr>   <chr>             <dbl>            <dbl>            <dbl>            <dbl>  <dbl>            <dbl>
+1 Switze~ Weste~                1             7.59           0.0341             1.40   1.35            0.941
+2 Switze~ Weste~                1             7.59           0.0341             1.40   1.35            0.941
+3 Switze~ Weste~                1             7.59           0.0341             1.40   1.35            0.941
+4 Iceland Weste~                2             7.56           0.0488             1.30   1.40            0.948
+5 Iceland Weste~                2             7.56           0.0488             1.30   1.40            0.948
+6 Iceland Weste~                2             7.56           0.0488             1.30   1.40            0.948
+# ... with 22 more variables: Freedom <dbl>, `Trust (Government Corruption)` <dbl>, Generosity <dbl>, `Dystopia
+#   Residual` <dbl>, Location <chr>, UID <chr>, Period <dbl>, Dim1 <chr>, LifeExpectancyIndicator <chr>,
+#   LifeExpectancy <dbl>, InfantMortalityIndicator <chr>, InfantMortality <chr>, SuicideRatesIndicator <chr>,
+#   SuicideRates <dbl>, AlcoholSubstanceAbuseIndicator <chr>, AlcoholSubstanceAbuse <dbl>,
+#   MortalityRatePoisoningIndicator <chr>, MortalityRatePoisoning <dbl>, TobaccoIndicator <chr>, Tobacco <dbl>,
+#   DiseaseDeathIndicator <chr>, DiseaseDeath <dbl>
+  [1] "Switzerland"            "Iceland"                "Denmark"                "Norway"                
+  [5] "Canada"                 "Finland"                "Netherlands"            "Sweden"                
+  [9] "New Zealand"            "Australia"              "Israel"                 "Costa Rica"            
+ [13] "Austria"                "Mexico"                 "Brazil"                 "Luxembourg"            
+ [17] "Ireland"                "Belgium"                "Oman"                   "Singapore"             
+ [21] "Panama"                 "Germany"                "Chile"                  "Qatar"                 
+ [25] "France"                 "Argentina"              "Colombia"               "Thailand"              
+ [29] "Saudi Arabia"           "Spain"                  "Malta"                  "Kuwait"                
+ [33] "El Salvador"            "Slovakia"               "Japan"                  "Bahrain"               
+ [37] "Italy"                  "Paraguay"               "Kazakhstan"             "Slovenia"              
+ [41] "Lithuania"              "Peru"                   "Belarus"                "Poland"                
+ [45] "Malaysia"               "Croatia"                "Jamaica"                "Cyprus"                
+ [49] "Algeria"                "Mauritius"              "Estonia"                "Indonesia"             
+ [53] "Kyrgyzstan"             "Nigeria"                "Azerbaijan"             "Pakistan"              
+ [57] "China"                  "Romania"                "Serbia"                 "Portugal"              
+ [61] "Latvia"                 "Philippines"            "Morocco"                "Mozambique"            
+ [65] "Albania"                "Bosnia and Herzegovina" "Lesotho"                "Dominican Republic"    
+ [69] "Mongolia"               "Greece"                 "Lebanon"                "Hungary"               
+ [73] "Bangladesh"             "Iraq"                   "South Africa"           "Ghana"                 
+ [77] "Liberia"                "India"                  "Haiti"                  "Nepal"                 
+ [81] "Ethiopia"               "Sierra Leone"           "Kenya"                  "Armenia"               
+ [85] "Botswana"               "Myanmar"                "Georgia"                "Malawi"                
+ [89] "Sri Lanka"              "Cameroon"               "Bulgaria"               "Egypt"                 
+ [93] "Mali"                   "Comoros"                "Senegal"                "Niger"                 
+ [97] "Cambodia"               "Madagascar"             "Chad"                   "Burkina Faso"          
+[101] "Rwanda"                 "Benin"                  "Burundi"               
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  2.905   4.565   5.399   5.517   6.574   7.587 
+# A tibble: 6 x 12
+  Dim1  Location Region Country `Happiness Scor~ InfantMortality LifeExpectancy MortalityRatePo~ SuicideRates
+  <chr> <chr>    <chr>  <chr>              <dbl> <chr>                    <dbl>            <dbl>        <dbl>
+1 Both~ Switzer~ Weste~ Switze~             7.59 3.78 [3.64-3.9~           82.6            0.099         17.1
+2 Male  Switzer~ Weste~ Switze~             7.59 4.1 [3.92-4.27]           80.6            0.1           22  
+3 Fema~ Switzer~ Weste~ Switze~             7.59 3.46 [3.3-3.62]           84.5            0.095         12.3
+4 Both~ Iceland  Weste~ Iceland             7.56 1.76 [1.49-2.0~           82.1            0.21          14  
+5 Male  Iceland  Weste~ Iceland             7.56 1.91 [1.61-2.2~           80.7            0.28          22.3
+6 Fema~ Iceland  Weste~ Iceland             7.56 1.61 [1.36-1.9~           83.6            0.15           5.7
+# ... with 3 more variables: AlcoholSubstanceAbuse <dbl>, Tobacco <dbl>, DiseaseDeath <dbl>
+# A tibble: 6 x 12
+  Dim1  Location Region Country `Happiness Scor~ InfantMortality LifeExpectancy MortalityRatePo~ SuicideRates
+  <chr> <chr>    <chr>  <chr>              <dbl> <chr>                    <dbl>            <dbl>        <dbl>
+1 Both~ Switzer~ Weste~ Switze~             7.59 3.78 [3.64-3.9~           82.6            0.099         17.1
+2 Both~ Iceland  Weste~ Iceland             7.56 1.76 [1.49-2.0~           82.1            0.21          14  
+3 Both~ Denmark  Weste~ Denmark             7.53 3.49 [3.33-3.6~           80.6            0.16          11.9
+4 Both~ Norway   Weste~ Norway              7.52 2.21 [2.09-2.3~           82.0            0.18          12.4
+5 Both~ Canada   North~ Canada              7.43 4.61 [4.52-4.6~           81.8            0.31          12.5
+6 Both~ Finland  Weste~ Finland             7.41 2.03 [1.92-2.1~           81.2            0.23          14.4
+# ... with 3 more variables: AlcoholSubstanceAbuse <dbl>, Tobacco <dbl>, DiseaseDeath <dbl>
+
+	studentized Breusch-Pagan test
+
+data:  model
+BP = 9.7201, df = 12, p-value = 0.6405
+
+
+	studentized Breusch-Pagan test
+
+data:  lmMod1
+BP = 7.5128, df = 1, p-value = 0.006126
+
+Box-Cox Transformation
+
+34 data points used to estimate Lambda
+
+Input data summary:
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  3.819   5.200   6.127   6.149   7.127   7.587 
+
+Largest/Smallest: 1.99 
+Sample Skewness: -0.278 
+
+Estimated Lambda: 1.7 
+
+
+	studentized Breusch-Pagan test
+
+data:  lmMod_edit
+BP = 0.50902, df = 1, p-value = 0.4756
+
+
+	studentized Breusch-Pagan test
+
+data:  lmMod2
+BP = 0.060914, df = 1, p-value = 0.8051
+
+
+	studentized Breusch-Pagan test
+
+data:  lmMod3
+BP = 0.9335, df = 1, p-value = 0.334
+
+
+	studentized Breusch-Pagan test
+
+data:  lmMod4
+BP = 7.0026, df = 1, p-value = 0.008139
+
+
+	studentized Breusch-Pagan test
+
+data:  lmMod_edit2
+BP = 0.72654, df = 1, p-value = 0.394
+
+
+	studentized Breusch-Pagan test
+
+data:  lmMod5
+BP = 0.89808, df = 1, p-value = 0.3433
+
+
+	studentized Breusch-Pagan test
+
+data:  lmMod6
+BP = 0.1114, df = 1, p-value = 0.7386
+
+
+	studentized Breusch-Pagan test
+
+data:  lmMod7
+BP = 0.87828, df = 1, p-value = 0.3487
+
+
+	studentized Breusch-Pagan test
+
+data:  lmMod8
+BP = 0.95184, df = 1, p-value = 0.3293
+
+
+	studentized Breusch-Pagan test
+
+data:  lmMod9
+BP = 4.2574, df = 1, p-value = 0.03908
+
+
+	studentized Breusch-Pagan test
+
+data:  lmMod_edit9
+BP = 0.0016802, df = 1, p-value = 0.9673
+
+
+	studentized Breusch-Pagan test
+
+data:  lmMod10
+BP = 0.56185, df = 1, p-value = 0.4535
+
+
+	studentized Breusch-Pagan test
+
+data:  lmMod11
+BP = 4.2574, df = 1, p-value = 0.03908
+
+
+	studentized Breusch-Pagan test
+
+data:  lmMod12
+BP = 3.8356, df = 1, p-value = 0.05017
+
+
+	studentized Breusch-Pagan test
+
+data:  lmMod13
+BP = 2.1142, df = 1, p-value = 0.1459
+
+
+Call:
+lm(formula = HappinessScore ~ BasicSanitization + FertilityRate + 
+    BussinessScore + Cellular + FoodInsecurity + HealthExpGDP + 
+    HealthExpGov + RenewableEnergy + RuralPop + SecEduc + BasicDrinkWater + 
+    Undernourishment, data = WorldBank_V2)
+
+Coefficients:
+      (Intercept)  BasicSanitization      FertilityRate     BussinessScore           Cellular     FoodInsecurity  
+         2.196430           0.011233           0.288243           0.008098          -0.002679          -0.028223  
+     HealthExpGDP       HealthExpGov    RenewableEnergy           RuralPop            SecEduc    BasicDrinkWater  
+        -0.005217           0.076645           0.009082          -0.022262           0.010716           0.007748  
+ Undernourishment  
+         0.062256  
+
+
+ASSESSMENT OF THE LINEAR MODEL ASSUMPTIONS
+USING THE GLOBAL TEST ON 4 DEGREES-OF-FREEDOM:
+Level of Significance =  0.05 
+
+Call:
+ gvlma(x = model) 
+
+                     Value p-value                Decision
+Global Stat        4.30038 0.36688 Assumptions acceptable.
+Skewness           0.04812 0.82637 Assumptions acceptable.
+Kurtosis           0.01034 0.91900 Assumptions acceptable.
+Link Function      3.53340 0.06014 Assumptions acceptable.
+Heteroscedasticity 0.70852 0.39994 Assumptions acceptable.
+
+Call:
+lm(formula = dist_newM ~ BasicSanitization, data = WorldBank3)
+
+Coefficients:
+      (Intercept)  BasicSanitization  
+           3.2661             0.1007  
+
+
+ASSESSMENT OF THE LINEAR MODEL ASSUMPTIONS
+USING THE GLOBAL TEST ON 4 DEGREES-OF-FREEDOM:
+Level of Significance =  0.05 
+
+Call:
+ gvlma(x = lmMod_edit) 
+
+                     Value p-value                Decision
+Global Stat        4.04690  0.3997 Assumptions acceptable.
+Skewness           0.20267  0.6526 Assumptions acceptable.
+Kurtosis           2.43138  0.1189 Assumptions acceptable.
+Link Function      1.39957  0.2368 Assumptions acceptable.
+Heteroscedasticity 0.01329  0.9082 Assumptions acceptable.
+
+Call:
+lm(formula = HappinessScore ~ BussinessScore, data = WorldBank_V2)
+
+Coefficients:
+   (Intercept)  BussinessScore  
+       1.67406         0.06044  
+
+
+ASSESSMENT OF THE LINEAR MODEL ASSUMPTIONS
+USING THE GLOBAL TEST ON 4 DEGREES-OF-FREEDOM:
+Level of Significance =  0.05 
+
+Call:
+ gvlma(x = lmMod2) 
+
+                    Value p-value                Decision
+Global Stat        3.2529  0.5164 Assumptions acceptable.
+Skewness           0.1099  0.7403 Assumptions acceptable.
+Kurtosis           0.4641  0.4957 Assumptions acceptable.
+Link Function      2.4227  0.1196 Assumptions acceptable.
+Heteroscedasticity 0.2563  0.6127 Assumptions acceptable.
+
+Call:
+lm(formula = HappinessScore ~ Cellular, data = WorldBank_V2)
+
+Coefficients:
+(Intercept)     Cellular  
+     3.4828       0.0177  
+
+
+ASSESSMENT OF THE LINEAR MODEL ASSUMPTIONS
+USING THE GLOBAL TEST ON 4 DEGREES-OF-FREEDOM:
+Level of Significance =  0.05 
+
+Call:
+ gvlma(x = lmMod3) 
+
+                    Value p-value                Decision
+Global Stat        6.3156  0.1768 Assumptions acceptable.
+Skewness           0.9336  0.3339 Assumptions acceptable.
+Kurtosis           0.6480  0.4208 Assumptions acceptable.
+Link Function      3.4281  0.0641 Assumptions acceptable.
+Heteroscedasticity 1.3060  0.2531 Assumptions acceptable.
+
+Call:
+lm(formula = HappinessScore ~ FertilityRate, data = WorldBank_V2)
+
+Coefficients:
+  (Intercept)  FertilityRate  
+       6.9703        -0.5691  
+
+
+ASSESSMENT OF THE LINEAR MODEL ASSUMPTIONS
+USING THE GLOBAL TEST ON 4 DEGREES-OF-FREEDOM:
+Level of Significance =  0.05 
+
+Call:
+ gvlma(x = lmMod4) 
+
+                    Value p-value                Decision
+Global Stat        4.2873 0.36851 Assumptions acceptable.
+Skewness           0.1995 0.65516 Assumptions acceptable.
+Kurtosis           3.2286 0.07236 Assumptions acceptable.
+Link Function      0.6264 0.42866 Assumptions acceptable.
+Heteroscedasticity 0.2328 0.62942 Assumptions acceptable.
+
+Call:
+lm(formula = dist_newM ~ FertilityRate, data = WorldBank3)
+
+Coefficients:
+  (Intercept)  FertilityRate  
+       14.618         -1.117  
+
+
+ASSESSMENT OF THE LINEAR MODEL ASSUMPTIONS
+USING THE GLOBAL TEST ON 4 DEGREES-OF-FREEDOM:
+Level of Significance =  0.05 
+
+Call:
+ gvlma(x = lmMod_edit2) 
+
+                     Value p-value                Decision
+Global Stat        2.65579  0.6170 Assumptions acceptable.
+Skewness           0.12981  0.7186 Assumptions acceptable.
+Kurtosis           2.08641  0.1486 Assumptions acceptable.
+Link Function      0.38679  0.5340 Assumptions acceptable.
+Heteroscedasticity 0.05279  0.8183 Assumptions acceptable.
+
+Call:
+lm(formula = HappinessScore ~ FoodInsecurity, data = WorldBank_V2)
+
+Coefficients:
+   (Intercept)  FoodInsecurity  
+       6.51083        -0.03626  
+
+
+ASSESSMENT OF THE LINEAR MODEL ASSUMPTIONS
+USING THE GLOBAL TEST ON 4 DEGREES-OF-FREEDOM:
+Level of Significance =  0.05 
+
+Call:
+ gvlma(x = lmMod5) 
+
+                      Value   p-value                   Decision
+Global Stat        17.07888 0.0018659 Assumptions NOT satisfied!
+Skewness            0.04122 0.8391063    Assumptions acceptable.
+Kurtosis            5.07262 0.0243066 Assumptions NOT satisfied!
+Link Function      11.07576 0.0008746 Assumptions NOT satisfied!
+Heteroscedasticity  0.88927 0.3456746    Assumptions acceptable.
+
+Call:
+lm(formula = HappinessScore ~ HealthExpGDP, data = WorldBank_V2)
+
+Coefficients:
+ (Intercept)  HealthExpGDP  
+      4.1168        0.3729  
+
+
+ASSESSMENT OF THE LINEAR MODEL ASSUMPTIONS
+USING THE GLOBAL TEST ON 4 DEGREES-OF-FREEDOM:
+Level of Significance =  0.05 
+
+Call:
+ gvlma(x = lmMod6) 
+
+                     Value p-value                   Decision
+Global Stat        6.18361  0.1858    Assumptions acceptable.
+Skewness           0.49094  0.4835    Assumptions acceptable.
+Kurtosis           0.07952  0.7780    Assumptions acceptable.
+Link Function      4.30496  0.0380 Assumptions NOT satisfied!
+Heteroscedasticity 1.30820  0.2527    Assumptions acceptable.
+
+Call:
+lm(formula = HappinessScore ~ HealthExpGov, data = WorldBank_V2)
+
+Coefficients:
+ (Intercept)  HealthExpGov  
+       3.840         0.151  
+
+
+ASSESSMENT OF THE LINEAR MODEL ASSUMPTIONS
+USING THE GLOBAL TEST ON 4 DEGREES-OF-FREEDOM:
+Level of Significance =  0.05 
+
+Call:
+ gvlma(x = lmMod7) 
+
+                      Value p-value                   Decision
+Global Stat        4.491155 0.34360    Assumptions acceptable.
+Skewness           0.002927 0.95685    Assumptions acceptable.
+Kurtosis           0.020425 0.88636    Assumptions acceptable.
+Link Function      4.107754 0.04269 Assumptions NOT satisfied!
+Heteroscedasticity 0.360049 0.54848    Assumptions acceptable.
+
+Call:
+lm(formula = HappinessScore ~ RenewableEnergy, data = WorldBank_V2)
+
+Coefficients:
+    (Intercept)  RenewableEnergy  
+        6.15777         -0.02113  
+
+
+ASSESSMENT OF THE LINEAR MODEL ASSUMPTIONS
+USING THE GLOBAL TEST ON 4 DEGREES-OF-FREEDOM:
+Level of Significance =  0.05 
+
+Call:
+ gvlma(x = lmMod8) 
+
+                       Value p-value                   Decision
+Global Stat        8.8012845 0.06626    Assumptions acceptable.
+Skewness           6.2529311 0.01240 Assumptions NOT satisfied!
+Kurtosis           0.0008002 0.97743    Assumptions acceptable.
+Link Function      0.7090483 0.39976    Assumptions acceptable.
+Heteroscedasticity 1.8385049 0.17513    Assumptions acceptable.
+
+Call:
+lm(formula = HappinessScore ~ RuralPop, data = WorldBank_V2)
+
+Coefficients:
+(Intercept)     RuralPop  
+    6.90346     -0.03719  
+
+
+ASSESSMENT OF THE LINEAR MODEL ASSUMPTIONS
+USING THE GLOBAL TEST ON 4 DEGREES-OF-FREEDOM:
+Level of Significance =  0.05 
+
+Call:
+ gvlma(x = lmMod9) 
+
+                     Value p-value                Decision
+Global Stat        4.37928 0.35710 Assumptions acceptable.
+Skewness           2.88025 0.08967 Assumptions acceptable.
+Kurtosis           0.06127 0.80450 Assumptions acceptable.
+Link Function      0.10225 0.74914 Assumptions acceptable.
+Heteroscedasticity 1.33551 0.24783 Assumptions acceptable.
+
+Call:
+lm(formula = HappinessScore ~ SecEduc, data = WorldBank_V2)
+
+Coefficients:
+(Intercept)      SecEduc  
+    3.08881      0.03049  
+
+
+ASSESSMENT OF THE LINEAR MODEL ASSUMPTIONS
+USING THE GLOBAL TEST ON 4 DEGREES-OF-FREEDOM:
+Level of Significance =  0.05 
+
+Call:
+ gvlma(x = lmMod10) 
+
+                       Value p-value                Decision
+Global Stat        1.682e+00  0.7940 Assumptions acceptable.
+Skewness           5.734e-01  0.4489 Assumptions acceptable.
+Kurtosis           1.071e+00  0.3007 Assumptions acceptable.
+Link Function      2.310e-06  0.9988 Assumptions acceptable.
+Heteroscedasticity 3.745e-02  0.8465 Assumptions acceptable.
+
+Call:
+lm(formula = HappinessScore ~ UrbanPop, data = WorldBank_V2)
+
+Coefficients:
+(Intercept)     UrbanPop  
+    3.18406      0.03719  
+
+
+ASSESSMENT OF THE LINEAR MODEL ASSUMPTIONS
+USING THE GLOBAL TEST ON 4 DEGREES-OF-FREEDOM:
+Level of Significance =  0.05 
+
+Call:
+ gvlma(x = lmMod11) 
+
+                     Value p-value                Decision
+Global Stat        4.37928 0.35710 Assumptions acceptable.
+Skewness           2.88025 0.08967 Assumptions acceptable.
+Kurtosis           0.06127 0.80450 Assumptions acceptable.
+Link Function      0.10225 0.74914 Assumptions acceptable.
+Heteroscedasticity 1.33551 0.24783 Assumptions acceptable.
+
+Call:
+lm(formula = HappinessScore ~ BasicDrinkWater, data = WorldBank_V2)
+
+Coefficients:
+    (Intercept)  BasicDrinkWater  
+        1.09466          0.04968  
+
+
+ASSESSMENT OF THE LINEAR MODEL ASSUMPTIONS
+USING THE GLOBAL TEST ON 4 DEGREES-OF-FREEDOM:
+Level of Significance =  0.05 
+
+Call:
+ gvlma(x = lmMod12) 
+
+                       Value   p-value                   Decision
+Global Stat        2.497e+01 5.091e-05 Assumptions NOT satisfied!
+Skewness           8.485e-04 9.768e-01    Assumptions acceptable.
+Kurtosis           4.226e+00 3.981e-02 Assumptions NOT satisfied!
+Link Function      1.982e+01 8.497e-06 Assumptions NOT satisfied!
+Heteroscedasticity 9.247e-01 3.362e-01    Assumptions acceptable.
+
+Call:
+lm(formula = HappinessScore ~ BasicDrinkWater, data = WorldBank)
+
+Coefficients:
+    (Intercept)  BasicDrinkWater  
+        0.99874          0.05099  
+
+
+ASSESSMENT OF THE LINEAR MODEL ASSUMPTIONS
+USING THE GLOBAL TEST ON 4 DEGREES-OF-FREEDOM:
+Level of Significance =  0.05 
+
+Call:
+ gvlma(x = lmMod13) 
+
+                       Value   p-value                   Decision
+Global Stat        2.188e+01 2.118e-04 Assumptions NOT satisfied!
+Skewness           8.555e-05 9.926e-01    Assumptions acceptable.
+Kurtosis           3.867e+00 4.923e-02 Assumptions NOT satisfied!
+Link Function      1.693e+01 3.871e-05 Assumptions NOT satisfied!
+Heteroscedasticity 1.079e+00 2.990e-01    Assumptions acceptable.
+                  HappinessScore BasicDrinkWater BasicSanitization BussinessScore Cellular FertilityRate
+HappinessScore                 1              NA                NA             NA       NA            NA
+BasicDrinkWater               NA               1                NA             NA       NA            NA
+BasicSanitization             NA              NA                 1             NA       NA            NA
+BussinessScore                NA              NA                NA              1       NA            NA
+Cellular                      NA              NA                NA             NA        1            NA
+FertilityRate                 NA              NA                NA             NA       NA             1
+FoodInsecurity                NA              NA                NA             NA       NA            NA
+HealthExpGDP                  NA              NA                NA             NA       NA            NA
+HealthExpGov                  NA              NA                NA             NA       NA            NA
+PopFem                        NA              NA                NA             NA       NA            NA
+PopMale                       NA              NA                NA             NA       NA            NA
+PrimarySchool                 NA              NA                NA             NA       NA            NA
+RenewableEnergy               NA              NA                NA             NA       NA            NA
+RuralPop                      NA              NA                NA             NA       NA            NA
+SecEduc                       NA              NA                NA             NA       NA            NA
+Undernourishment              NA              NA                NA             NA       NA            NA
+UrbanPop                      NA              NA                NA             NA       NA            NA
+                  FoodInsecurity HealthExpGDP HealthExpGov PopFem PopMale PrimarySchool RenewableEnergy RuralPop
+HappinessScore                NA           NA           NA     NA      NA            NA              NA       NA
+BasicDrinkWater               NA           NA           NA     NA      NA            NA              NA       NA
+BasicSanitization             NA           NA           NA     NA      NA            NA              NA       NA
+BussinessScore                NA           NA           NA     NA      NA            NA              NA       NA
+Cellular                      NA           NA           NA     NA      NA            NA              NA       NA
+FertilityRate                 NA           NA           NA     NA      NA            NA              NA       NA
+FoodInsecurity                 1           NA           NA     NA      NA            NA              NA       NA
+HealthExpGDP                  NA            1           NA     NA      NA            NA              NA       NA
+HealthExpGov                  NA           NA            1     NA      NA            NA              NA       NA
+PopFem                        NA           NA           NA      1      NA            NA              NA       NA
+PopMale                       NA           NA           NA     NA       1            NA              NA       NA
+PrimarySchool                 NA           NA           NA     NA      NA             1              NA       NA
+RenewableEnergy               NA           NA           NA     NA      NA            NA               1       NA
+RuralPop                      NA           NA           NA     NA      NA            NA              NA        1
+SecEduc                       NA           NA           NA     NA      NA            NA              NA       NA
+Undernourishment              NA           NA           NA     NA      NA            NA              NA       NA
+UrbanPop                      NA           NA           NA     NA      NA            NA              NA       NA
+                  SecEduc Undernourishment UrbanPop
+HappinessScore         NA               NA       NA
+BasicDrinkWater        NA               NA       NA
+BasicSanitization      NA               NA       NA
+BussinessScore         NA               NA       NA
+Cellular               NA               NA       NA
+FertilityRate          NA               NA       NA
+FoodInsecurity         NA               NA       NA
+HealthExpGDP           NA               NA       NA
+HealthExpGov           NA               NA       NA
+PopFem                 NA               NA       NA
+PopMale                NA               NA       NA
+PrimarySchool          NA               NA       NA
+RenewableEnergy        NA               NA       NA
+RuralPop               NA               NA       NA
+SecEduc                 1               NA       NA
+Undernourishment       NA                1       NA
+UrbanPop               NA               NA        1
+            Country                      Region Code HappinessScore AdolescentSchool ArmedForces ArmedForces2
+1           Albania  Central and Eastern Europe  ALB          4.959          3.05841  0.65913853         8500
+2           Austria              Western Europe  AUT          7.200          1.97000  0.47861016        21350
+3           Belgium              Western Europe  BEL          6.937          2.41607  0.72686771        36350
+4          Cambodia           Southeastern Asia  KHM          3.819         13.30809  2.24323018       191300
+7    Czech Republic  Central and Eastern Europe  CZE          6.505          0.21226  0.46932735        25050
+8           Denmark              Western Europe  DNK          7.527          2.14711  0.56629507        16600
+9           Ecuador Latin America and Caribbean  ECU          5.975          1.54987  0.53298392        40750
+11          Estonia  Central and Eastern Europe  EST          5.429          0.77113  0.93270939         6400
+14          Georgia  Central and Eastern Europe  GEO          4.297          0.39258  1.24597033        26050
+15           Greece              Western Europe  GRC          4.857          3.59568  3.04525883       146950
+17          Hungary  Central and Eastern Europe  HUN          4.800          3.00155  0.83384772        38500
+21           Latvia  Central and Eastern Europe  LVA          5.098          1.85964  0.52657989         5310
+23       Luxembourg              Western Europe  LUX          6.946          4.95872  0.53050398         1500
+25        Mauritius          Sub-Saharan Africa  MUS          5.477          7.07469  0.42234976         2550
+26           Mexico Latin America and Caribbean  MEX          7.187          2.42926  0.62725503       336050
+27       Mozambique          Sub-Saharan Africa  MOZ          4.971         43.10912  0.09631464        11200
+28           Norway              Western Europe  NOR          7.522          0.32904  0.90330672        24950
+30           Serbia  Central and Eastern Europe  SRB          5.123          0.04920  0.90902809        28150
+31         Slovenia  Central and Eastern Europe  SVN          5.848          0.47288  1.30576714        13200
+NA             <NA>                        <NA> <NA>             NA               NA          NA           NA
+NA.1           <NA>                        <NA> <NA>             NA               NA          NA           NA
+NA.2           <NA>                        <NA> <NA>             NA               NA          NA           NA
+NA.3           <NA>                        <NA> <NA>             NA               NA          NA           NA
+NA.4           <NA>                        <NA> <NA>             NA               NA          NA           NA
+NA.5           <NA>                        <NA> <NA>             NA               NA          NA           NA
+NA.6           <NA>                        <NA> <NA>             NA               NA          NA           NA
+NA.7           <NA>                        <NA> <NA>             NA               NA          NA           NA
+     BasicDrinkWater BasicSanitization BussinessScore Cellular Electricity FertilityRate FoodInsecurity
+1           91.00102          97.69103       58.07559 117.6590   100.00000         1.677           38.8
+2          100.00000          99.97671       78.81665 155.2150   100.00000         1.490            5.5
+3          100.00000          99.48606       72.42806 113.1660   100.00000         1.700            9.5
+4           75.38111          53.38575       52.87481 134.3340    68.81590         2.593           48.9
+7           99.88009          99.13538       76.10923 117.4810   100.00000         1.570            5.8
+8          100.00000          99.59723       84.50938 124.4440   100.00000         1.710            5.9
+9           93.05378          86.09980       57.10316  79.8407    98.82588         2.499           23.3
+11          99.71054          99.13278       80.53864 144.7210   100.00000         1.580            9.5
+14          97.91408          90.49064       78.30005 137.9340    99.99189         2.050           31.8
+15         100.00000          98.97597       66.92296 117.8890   100.00000         1.330           15.8
+17          99.97053          97.99545       71.06578 101.2540   100.00000         1.450           11.3
+21          98.52336          91.41686       79.13397 129.6510   100.00000         1.700            9.9
+23          99.92517          97.61074       69.15342 142.3580   100.00000         1.470            4.7
+25          99.86648          95.50608       76.02546 139.9250    97.34584         1.360           13.0
+26          98.37579          89.41728       71.64492  88.3718    99.00000         2.215           27.4
+27          51.19878          26.86935       52.81247  74.4580    24.00000         5.062           68.4
+28         100.00000          98.05673       81.83183 109.9050   100.00000         1.720            4.8
+30          86.28549          97.63536       69.96245 103.1420    99.90000         1.460           11.4
+31          99.53378          99.10933       74.71274 113.6500   100.00000         1.570           12.3
+NA                NA                NA             NA       NA          NA            NA             NA
+NA.1              NA                NA             NA       NA          NA            NA             NA
+NA.2              NA                NA             NA       NA          NA            NA             NA
+NA.3              NA                NA             NA       NA          NA            NA             NA
+NA.4              NA                NA             NA       NA          NA            NA             NA
+NA.5              NA                NA             NA       NA          NA            NA             NA
+NA.6              NA                NA             NA       NA          NA            NA             NA
+NA.7              NA                NA             NA       NA          NA            NA             NA
+       GDPGrowth HealthExpGDP HealthExpGov LegalRightsIndex Manufactoring NationalIncome  Pop1564     Pop65
+1     2.21875223     2.731354     8.991549                6      5.671491     0.91198485 68.70472 12.626548
+2     1.01450159     7.511853    14.691256                4     16.690036     0.53112472 67.03954 18.840478
+3     2.04145901     7.897839    14.701943                4     12.693334     2.33325849 64.85353 18.142309
+4     7.03608718     1.344651     6.633149               10     16.013772     5.93219486 64.27864  4.119181
+7     5.38838084     5.955934    14.283198                7     23.921677     6.70806494 66.89084 17.994977
+8     2.34259111     8.609555    15.789342                8     12.403445     2.65562015 64.10940 19.047444
+9     0.09887261     4.241140    10.688430                1     14.423508    -0.20528496 64.33874  6.602453
+11    1.84488668     4.782454    12.188362                7     13.804991     2.90857232 65.04750 18.822040
+14    3.02220738     2.821514     9.608580                9      8.864594     3.30608960 66.68472 14.348925
+15   -0.43783383     4.558318     8.510997                2      8.658240     1.17414811 64.61915 20.821004
+17    3.81942838     4.670061     9.223676                9     20.231106     4.23624491 68.08258 17.468802
+21    4.00687403     3.336608     8.792086                9     10.472745     3.86914564 65.38710 19.518600
+23    4.30643149     4.465108    10.741470                3      4.634450     0.03956811 69.62793 13.994223
+25    3.55307173     2.375491     9.458420                6     13.036573     2.88973599 70.64566  9.954060
+26    3.29315153     3.077319    11.179375               10     17.161630     2.99934376 65.63932  6.724716
+27    6.72327878     1.956918     5.554438                1      8.192260     8.61780290 51.67991  2.899941
+28    1.96712844     8.663884    17.580814                5      6.873817    -0.49591962 65.73465 16.303033
+30    1.80605927     5.087393    11.918012                6     14.767928    -0.30509542 66.87910 16.956684
+31    2.21008161     6.063872    12.448796                3     19.939383     0.41909719 67.31676 18.013286
+NA            NA           NA           NA               NA            NA             NA       NA        NA
+NA.1          NA           NA           NA               NA            NA             NA       NA        NA
+NA.2          NA           NA           NA               NA            NA             NA       NA        NA
+NA.3          NA           NA           NA               NA            NA             NA       NA        NA
+NA.4          NA           NA           NA               NA            NA             NA       NA        NA
+NA.5          NA           NA           NA               NA            NA             NA       NA        NA
+NA.6          NA           NA           NA               NA            NA             NA       NA        NA
+NA.7          NA           NA           NA               NA            NA             NA       NA        NA
+       PopFem  PopMale PrimarySchool RenewableEnergy RuralPop   SecEduc SevereFoodInsecurity  TradeGDP
+1    49.09380 50.90620       2.20127       38.615210   42.566  99.15678                 10.0  71.80104
+2    51.04483 48.95517       0.47045       34.394992   42.285  96.22541                  1.1 102.42732
+3    50.84454 49.15546       0.97579        9.201641    2.124  95.04216                  3.1 154.19255
+4    51.22590 48.77410       4.43741       64.923776   77.812  48.17112                 16.9 127.86407
+7    50.86512 49.13488       0.19085       14.828562   26.523  98.93683                  0.7 155.17566
+8    50.27316 49.72684       0.05955       33.170277   12.474  97.59461                  1.0 104.04823
+9    49.94481 50.05519       0.98589       13.816686   36.602 101.14980                  7.1  45.24388
+11   53.22657 46.77343       2.45569       27.476833   31.584 107.41864                  0.9 149.84157
+14   52.24498 47.75502       0.26285       28.662539   42.552 101.77565                  7.0  98.76882
+15   50.91008 49.08992       2.17935       17.170048   21.954  94.03724                  2.6  63.05516
+17   52.47748 47.52252       2.86345       15.559362   29.500  93.80418                  1.4 167.23995
+21   54.16036 45.83964       2.03865       38.098017   32.020  95.57563                  0.6 122.28361
+23   49.81111 50.18889       1.05806        9.031314    9.821  97.20722                  1.8 408.36201
+25   50.47112 49.52888       1.07612       11.537362   59.000  84.16783                  5.2 105.00960
+26   51.09550 48.90450       0.57450        9.215213   20.715  92.96433                  8.0  71.08909
+27   51.58628 48.41372       8.48541       86.400509   65.600  22.94938                 40.7  93.90871
+28   49.65471 50.34529       0.13350       57.772002   18.909  99.65188                  1.1  69.85917
+30   50.98365 49.01635       0.79377       21.173885   44.304 101.81807                  1.7  97.39577
+31   50.30651 49.69349       0.45091       20.877396   46.219  98.99796                  0.9 146.29586
+NA         NA       NA            NA              NA       NA        NA                   NA        NA
+NA.1       NA       NA            NA              NA       NA        NA                   NA        NA
+NA.2       NA       NA            NA              NA       NA        NA                   NA        NA
+NA.3       NA       NA            NA              NA       NA        NA                   NA        NA
+NA.4       NA       NA            NA              NA       NA        NA                   NA        NA
+NA.5       NA       NA            NA              NA       NA        NA                   NA        NA
+NA.6       NA       NA            NA              NA       NA        NA                   NA        NA
+NA.7       NA       NA            NA              NA       NA        NA                   NA        NA
+     TradeinServices Undernourishment Unemployment UrbanGrowth UrbanPop Grand Total dist_newM
+1          34.387351              4.9      17.1930   1.4847643   57.434    9596.217  8.359663
+2          27.966225              2.5       5.7227   1.4490015   57.715   22496.022 16.277929
+3          46.148256              2.5       8.4820   0.6233859   97.876   37496.353 15.244026
+4          34.333189             15.7       0.3931   3.3724482   22.188  192383.289  5.151152
+7          22.886063              2.5       5.0464   0.3232375   73.477   26199.388 13.604676
+8          40.517497              2.5       6.2779   0.8390472   87.526   17737.839 17.600744
+9           5.639893              8.8       3.6157   1.8342155   63.398   41682.179 11.695361
+11         42.710283              2.5       6.1866   0.2806315   68.416    7603.056  9.848744
+14         31.898607              5.9      16.5059   0.8229190   57.448   27199.373  6.425222
+15         26.364603              2.5      24.8971  -0.2171285   78.046  148000.049  8.049042
+17         31.615100              2.5       6.8132   0.1501414   70.500   39645.548  7.877432
+21         27.340450              2.5       9.8730  -0.7774373   67.980    6444.626  8.790209
+23        304.276146              2.5       6.6686   2.6875314   90.179    3165.107 15.278961
+25         40.829206              5.8       7.4096  -0.1380241   41.000    3659.331 10.006101
+26          4.743144              5.6       4.3127   1.6101496   79.285  337047.665 16.226192
+27         23.519765             31.0       3.4264   4.3639403   34.400   12147.385  8.396504
+28         23.047176              2.5       4.2959   1.4883378   81.091   26029.021 17.580209
+30         21.861135              4.1      17.6597  -0.2916657   55.696   29210.064  8.868527
+31         26.401933              2.5       8.9623   0.4925662   53.781   14337.945 11.254816
+NA                NA               NA           NA          NA       NA          NA        NA
+NA.1              NA               NA           NA          NA       NA          NA        NA
+NA.2              NA               NA           NA          NA       NA          NA        NA
+NA.3              NA               NA           NA          NA       NA          NA        NA
+NA.4              NA               NA           NA          NA       NA          NA        NA
+NA.5              NA               NA           NA          NA       NA          NA        NA
+NA.6              NA               NA           NA          NA       NA          NA        NA
+NA.7              NA               NA           NA          NA       NA          NA        NA
+ [ reached 'max' / getOption("max.print") -- omitted 4 rows ]
+No Studentized residuals with Bonferroni p < 0.05
+Largest |rstudent|:
+    rstudent unadjusted p-value Bonferroni p
+156 2.393048           0.021147           NA
+Potentially influential observations of
+	 lm(formula = HappinessScore ~ BasicSanitization + FertilityRate +      BussinessScore + Cellular + FoodInsecurity + HealthExpGDP +      HealthExpGov + RenewableEnergy + RuralPop + SecEduc + BasicDrinkWater +      Undernourishment, data = WorldBank_V2) :
+
+    dfb.1_ dfb.BscS dfb.FrtR dfb.BssS dfb.Clll dfb.FdIn dfb.HEGD dfb.HlEG dfb.RnwE dfb.RrlP dfb.ScEd dfb.BsDW
+2    0.00  -0.02     0.00     0.01     0.00    -0.02     0.00     0.00    -0.01     0.00    -0.01     0.01   
+36   0.16   0.55     0.18     0.01    -0.03     0.90    -0.12    -0.39     0.59    -0.30    -0.05    -0.45   
+50   0.04   0.04    -0.06    -0.01     0.06     0.02    -0.11     0.28     0.04     0.00    -0.16    -0.03   
+88   0.02  -1.12_*  -0.02     0.17     0.28     0.17     0.10     0.06    -0.39    -0.09     0.26     0.35   
+94  -0.04   0.00     0.02    -0.01    -0.02    -0.01    -0.03     0.03     0.03     0.00    -0.01     0.05   
+105  0.01  -0.03    -0.03     0.02     0.03     0.06     0.06     0.00    -0.18     0.09    -0.01    -0.03   
+121 -0.02   0.02     0.04     0.00     0.03    -0.01    -0.01     0.01    -0.01     0.01     0.03    -0.01   
+122  0.00   0.00     0.01    -0.01    -0.01    -0.01    -0.01    -0.02     0.02    -0.02    -0.10     0.06   
+171 -0.06  -0.14    -0.08    -0.18    -0.11    -0.07    -0.04    -0.07     0.37     0.20     0.06     0.27   
+    dfb.Undr dffit   cov.r   cook.d hat  
+2    0.01    -0.04    2.04_*  0.00   0.34
+36  -1.20_*   1.77_*  1.30    0.23   0.53
+50  -0.06     0.42    2.48_*  0.01   0.49
+88  -0.48     1.42    2.24_*  0.15   0.60
+94   0.04     0.08    2.14_*  0.00   0.37
+105 -0.01    -0.21    2.01_*  0.00   0.35
+121  0.01     0.06    1.94_*  0.00   0.31
+122 -0.04    -0.16    1.89_*  0.00   0.30
+171 -0.14     0.66    1.97_*  0.03   0.43
+Potentially influential observations of
+	 lm(formula = HappinessScore ~ BasicSanitization + FertilityRate +      BussinessScore + Cellular + FoodInsecurity + HealthExpGDP +      HealthExpGov + RenewableEnergy + RuralPop + SecEduc + BasicDrinkWater +      Undernourishment, data = WorldBank_V3) :
+
+    dfb.1_ dfb.BscS dfb.FrtR dfb.BssS dfb.Clll dfb.FdIn dfb.HEGD dfb.HlEG dfb.RnwE dfb.RrlP dfb.ScEd dfb.BsDW
+2    0.06   0.39    -0.04    -0.18    -0.02     0.39    -0.07    -0.11     0.28    -0.02     0.11    -0.28   
+49   0.02   0.04    -0.04    -0.01     0.03     0.00    -0.07     0.17     0.03     0.00    -0.11    -0.02   
+91   0.34  -0.01    -0.14     0.05     0.12     0.18     0.20    -0.26    -0.13    -0.09     0.08    -0.43   
+102  0.00  -0.02    -0.01     0.01     0.02     0.01     0.02     0.00    -0.07     0.03     0.00     0.00   
+118  0.03  -0.02    -0.05     0.00    -0.04     0.01     0.01    -0.01     0.01    -0.02    -0.04     0.01   
+119  0.02  -0.02    -0.02     0.01     0.00     0.01     0.01     0.03    -0.03     0.01     0.09    -0.06   
+164 -0.07   0.38     0.06     0.08    -0.07    -0.08     0.04    -0.16     0.10    -0.02    -0.23    -0.14   
+168 -0.03  -0.48    -0.20    -0.37    -0.19     0.08    -0.10    -0.21     0.83     0.36     0.23     0.55   
+228 -0.06   0.01    -0.01     0.01     0.03     0.00     0.04    -0.12     0.00    -0.02    -0.04     0.07   
+252 -0.07   0.14     0.09    -0.03    -0.21    -0.04    -0.06     0.04     0.02     0.11    -0.03     0.05   
+    dfb.Undr dffit   cov.r   cook.d hat  
+2   -0.23     0.65    2.36_*  0.03   0.49
+49  -0.02     0.27    2.65_*  0.01   0.49
+91  -0.35    -0.68    1.97_*  0.04   0.43
+102  0.00    -0.08    2.24_*  0.00   0.39
+118 -0.01    -0.08    2.02_*  0.00   0.32
+119  0.02     0.16    2.05_*  0.00   0.34
+164  0.40     0.73    2.65_*  0.04   0.55
+168 -0.63     1.73_*  0.95    0.22   0.48
+228  0.07    -0.19    2.62_*  0.00   0.48
+252  0.05     0.30    2.10_*  0.01   0.37
+Potentially influential observations of
+	 lm(formula = HappinessScore ~ BasicSanitization + FertilityRate +      BussinessScore + Cellular + FoodInsecurity + HealthExpGDP +      HealthExpGov + RenewableEnergy + RuralPop + SecEduc + BasicDrinkWater +      Undernourishment, data = WorldBank_V4) :
+
+    dfb.1_ dfb.BscS dfb.FrtR dfb.BssS dfb.Clll dfb.FdIn dfb.HEGD dfb.HlEG dfb.RnwE dfb.RrlP dfb.ScEd dfb.BsDW
+49   0.01   0.01    -0.01     0.00     0.01     0.00    -0.02     0.05     0.00     0.00    -0.03    -0.01   
+91   0.26   0.01    -0.10     0.05     0.10     0.13     0.15    -0.19    -0.12    -0.08     0.05    -0.34   
+102  0.00   0.06     0.02    -0.04    -0.06    -0.03    -0.08    -0.02     0.23    -0.09     0.01     0.01   
+113 -0.10   0.03     0.16     0.03     0.05     0.01    -0.02     0.00    -0.03    -0.04     0.09     0.01   
+118  0.07  -0.04    -0.12    -0.01    -0.09     0.02     0.03    -0.02     0.03    -0.03    -0.10     0.03   
+119  0.03  -0.03    -0.03     0.01     0.00     0.01     0.01     0.04    -0.03     0.02     0.13    -0.08   
+164  0.00   0.00     0.00     0.00     0.00     0.00     0.00     0.00     0.00     0.00     0.00     0.00   
+227  0.02  -0.01     0.00    -0.01    -0.01     0.00    -0.02     0.04     0.01     0.01     0.02    -0.02   
+251 -0.09   0.16     0.11    -0.04    -0.26    -0.04    -0.08     0.05     0.03     0.14    -0.03     0.07   
+    dfb.Undr dffit cov.r   cook.d hat  
+49   0.00     0.08  2.76_*  0.00   0.50
+91  -0.23    -0.53  2.18_*  0.02   0.43
+102 -0.03     0.27  2.31_*  0.01   0.42
+113  0.02     0.21  2.00_*  0.00   0.33
+118 -0.02    -0.20  2.00_*  0.00   0.33
+119  0.02     0.23  2.04_*  0.00   0.34
+164  0.00    -0.01  3.61_*  0.00   0.62
+227 -0.03     0.06  2.73_*  0.00   0.49
+251  0.05     0.37  2.06_*  0.01   0.38
+
+Call:
+lm(formula = HappinessScore ~ BasicSanitization + FertilityRate + 
+    BussinessScore + Cellular + FoodInsecurity + HealthExpGDP + 
+    HealthExpGov + RenewableEnergy + RuralPop + SecEduc + BasicDrinkWater + 
+    Undernourishment, data = WorldBank_V4)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.96752 -0.27996  0.03198  0.27244  1.28501 
+
+Coefficients:
+                   Estimate Std. Error t value Pr(>|t|)    
+(Intercept)       -0.325578   2.214147  -0.147 0.883835    
+BasicSanitization  0.025897   0.014024   1.847 0.072220 .  
+FertilityRate      0.416806   0.189743   2.197 0.033899 *  
+BussinessScore     0.009496   0.013342   0.712 0.480778    
+Cellular          -0.001686   0.004431  -0.380 0.705657    
+FoodInsecurity    -0.041549   0.011918  -3.486 0.001204 ** 
+HealthExpGDP       0.012512   0.063895   0.196 0.845739    
+HealthExpGov       0.087840   0.023013   3.817 0.000459 ***
+RenewableEnergy    0.002848   0.006130   0.465 0.644717    
+RuralPop          -0.019761   0.007057  -2.800 0.007826 ** 
+SecEduc            0.008201   0.007442   1.102 0.277034    
+BasicDrinkWater    0.014035   0.019904   0.705 0.484803    
+Undernourishment   0.148048   0.037155   3.985 0.000279 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.544 on 40 degrees of freedom
+  (207 observations deleted due to missingness)
+Multiple R-squared:  0.8305,	Adjusted R-squared:  0.7796 
+F-statistic: 16.33 on 12 and 40 DF,  p-value: 8.484e-12
+
+# A tibble: 6 x 12
+  Country Region `Happiness Rank` `Happiness Scor~ `Standard Error` `Economy (GDP p~ Family `Health (Life E~
+  <chr>   <chr>             <dbl>            <dbl>            <dbl>            <dbl>  <dbl>            <dbl>
+1 Switze~ Weste~                1             7.59           0.0341             1.40   1.35            0.941
+2 Iceland Weste~                2             7.56           0.0488             1.30   1.40            0.948
+3 Denmark Weste~                3             7.53           0.0333             1.33   1.36            0.875
+4 Norway  Weste~                4             7.52           0.0388             1.46   1.33            0.885
+5 Canada  North~                5             7.43           0.0355             1.33   1.32            0.906
+6 Finland Weste~                6             7.41           0.0314             1.29   1.32            0.889
+# ... with 4 more variables: Freedom <dbl>, `Trust (Government Corruption)` <dbl>, Generosity <dbl>, `Dystopia
+#   Residual` <dbl>
+
+	Bartlett test of homogeneity of variances
+
+data:  HappinessScore by Region
+Bartlett's K-squared = 27.188, df = 9, p-value = 0.001302
+
+Analysis of Deviance Table (Type II tests)
+
+Response: HappinessScore
+           Df      F    Pr(>F)    
+Region      9 183.91 < 2.2e-16 ***
+Residuals 148                     
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+	Pairwise comparisons using t tests with non-pooled SD 
+
+data:  Happiness2$HappinessScore and Happiness2$Region 
+
+                                Australia and New Zealand Central and Eastern Europe Eastern Asia
+Central and Eastern Europe      1.5e-15                   -                          -           
+Eastern Asia                    0.03326                   1.00000                    -           
+Latin America and Caribbean     1.4e-05                   0.00475                    1.00000     
+Middle East and Northern Africa 1.5e-05                   1.00000                    1.00000     
+North America                   1.00000                   0.31873                    0.07328     
+Southeastern Asia               0.01151                   1.00000                    1.00000     
+Southern Asia                   0.00071                   0.53571                    0.30174     
+Sub-Saharan Africa              < 2e-16                   2.6e-09                    0.03097     
+Western Europe                  0.15773                   9.6e-06                    0.13967     
+                                Latin America and Caribbean Middle East and Northern Africa North America
+Central and Eastern Europe      -                           -                               -            
+Eastern Asia                    -                           -                               -            
+Latin America and Caribbean     -                           -                               -            
+Middle East and Northern Africa 0.73337                     -                               -            
+North America                   0.32793                     0.00448                         -            
+Southeastern Asia               1.00000                     1.00000                         0.01998      
+Southern Asia                   0.00253                     0.89397                         0.00484      
+Sub-Saharan Africa              3.5e-11                     0.00535                         0.18305      
+Western Europe                  1.00000                     0.00766                         1.00000      
+                                Southeastern Asia Southern Asia Sub-Saharan Africa
+Central and Eastern Europe      -                 -             -                 
+Eastern Asia                    -                 -             -                 
+Latin America and Caribbean     -                 -             -                 
+Middle East and Northern Africa -                 -             -                 
+North America                   -                 -             -                 
+Southeastern Asia               -                 -             -                 
+Southern Asia                   1.00000           -             -                 
+Sub-Saharan Africa              0.34400           1.00000       -                 
+Western Europe                  0.10006           8.1e-05       7.3e-12           
+
+P value adjustment method: bonferroni 
+`summarise()` ungrouping output (override with `.groups` argument)
+
+	Bartlett test of homogeneity of variances
+
+data:  HappinessScore by Region2
+Bartlett's K-squared = 14.841, df = 5, p-value = 0.01106
+
+Analysis of Deviance Table (Type II tests)
+
+Response: HappinessScore
+           Df      F    Pr(>F)    
+Region2     5 145.68 < 2.2e-16 ***
+Residuals 152                     
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+	Pairwise comparisons using t tests with non-pooled SD 
+
+data:  Happiness3$HappinessScore and Happiness3$Region2 
+
+                            Africa  Asia    Australia and New Zealand Europe Latin America and Caribbean
+Asia                        0.1996  -       -                         -      -                          
+Australia and New Zealand   < 2e-16 1.2e-09 -                         -      -                          
+Europe                      3.9e-09 0.0290  1.6e-12                   -      -                          
+Latin America and Caribbean 7.4e-09 0.0025  4.8e-06                   1.0000 -                          
+North America               0.0194  0.0043  1.0000                    0.0910 0.1093                     
+
+P value adjustment method: bonferroni 
+`summarise()` ungrouping output (override with `.groups` argument)
+# A tibble: 6 x 30
+  Country Region `Happiness Rank` `Happiness Scor~ `Standard Error` `Economy (GDP p~ Family `Health (Life E~
+  <chr>   <chr>             <dbl>            <dbl>            <dbl>            <dbl>  <dbl>            <dbl>
+1 Switze~ Weste~                1             7.59           0.0341             1.40   1.35            0.941
+2 Switze~ Weste~                1             7.59           0.0341             1.40   1.35            0.941
+3 Switze~ Weste~                1             7.59           0.0341             1.40   1.35            0.941
+4 Iceland Weste~                2             7.56           0.0488             1.30   1.40            0.948
+5 Iceland Weste~                2             7.56           0.0488             1.30   1.40            0.948
+6 Iceland Weste~                2             7.56           0.0488             1.30   1.40            0.948
+# ... with 22 more variables: Freedom <dbl>, `Trust (Government Corruption)` <dbl>, Generosity <dbl>, `Dystopia
+#   Residual` <dbl>, Location <chr>, UID <chr>, Period <dbl>, Dim1 <chr>, LifeExpectancyIndicator <chr>,
+#   LifeExpectancy <dbl>, InfantMortalityIndicator <chr>, InfantMortality <chr>, SuicideRatesIndicator <chr>,
+#   SuicideRates <dbl>, AlcoholSubstanceAbuseIndicator <chr>, AlcoholSubstanceAbuse <dbl>,
+#   MortalityRatePoisoningIndicator <chr>, MortalityRatePoisoning <dbl>, TobaccoIndicator <chr>, Tobacco <dbl>,
+#   DiseaseDeathIndicator <chr>, DiseaseDeath <dbl>
+geom_point: na.rm = FALSE
+stat_summary: fun.data = NULL, fun = new("standardGeneric", .Data = function (x, ...) 
+standardGeneric("mean"), generic = "mean", package = "base", group = list(), valueClass = character(0), signature = "x", default = new("derivedDefaultMethod", .Data = function (x, ...) 
+UseMethod("mean"), target = new("signature", .Data = "ANY", names = "x", package = "methods"), defined = new("signature", .Data = "ANY", names = "x", package = "methods"), generic = "mean"), skeleton = (new("derivedDefaultMethod", .Data = function (x, ...) 
+UseMethod("mean"), target = new("signature", .Data = "ANY", names = "x", package = "methods"), defined = new("signature", .Data = "ANY", names = "x", package = "methods"), generic = "mean"))(x, ...)), fun.max = NULL, fun.min = NULL, fun.args = list(), na.rm = FALSE, orientation = NA
+position_identity 
+<ggproto object: Class CoordFlip, CoordCartesian, Coord, gg>
+    aspect: function
+    backtransform_range: function
+    clip: on
+    default: FALSE
+    distance: function
+    expand: TRUE
+    is_free: function
+    is_linear: function
+    labels: function
+    limits: list
+    modify_scales: function
+    range: function
+    render_axis_h: function
+    render_axis_v: function
+    render_bg: function
+    render_fg: function
+    setup_data: function
+    setup_layout: function
+    setup_panel_guides: function
+    setup_panel_params: function
+    setup_params: function
+    train_panel_guides: function
+    transform: function
+    super:  <ggproto object: Class CoordFlip, CoordCartesian, Coord, gg>
+geom_point: na.rm = FALSE
+stat_summary: fun.data = NULL, fun = new("standardGeneric", .Data = function (x, ...) 
+standardGeneric("mean"), generic = "mean", package = "base", group = list(), valueClass = character(0), signature = "x", default = new("derivedDefaultMethod", .Data = function (x, ...) 
+UseMethod("mean"), target = new("signature", .Data = "ANY", names = "x", package = "methods"), defined = new("signature", .Data = "ANY", names = "x", package = "methods"), generic = "mean"), skeleton = (new("derivedDefaultMethod", .Data = function (x, ...) 
+UseMethod("mean"), target = new("signature", .Data = "ANY", names = "x", package = "methods"), defined = new("signature", .Data = "ANY", names = "x", package = "methods"), generic = "mean"))(x, ...)), fun.max = NULL, fun.min = NULL, fun.args = list(), na.rm = FALSE, orientation = NA
+position_identity 
+<ggproto object: Class CoordFlip, CoordCartesian, Coord, gg>
+    aspect: function
+    backtransform_range: function
+    clip: on
+    default: FALSE
+    distance: function
+    expand: TRUE
+    is_free: function
+    is_linear: function
+    labels: function
+    limits: list
+    modify_scales: function
+    range: function
+    render_axis_h: function
+    render_axis_v: function
+    render_bg: function
+    render_fg: function
+    setup_data: function
+    setup_layout: function
+    setup_panel_guides: function
+    setup_panel_params: function
+    setup_params: function
+    train_panel_guides: function
+    transform: function
+    super:  <ggproto object: Class CoordFlip, CoordCartesian, Coord, gg>
+geom_point: na.rm = FALSE
+stat_summary: fun.data = NULL, fun = new("standardGeneric", .Data = function (x, ...) 
+standardGeneric("mean"), generic = "mean", package = "base", group = list(), valueClass = character(0), signature = "x", default = new("derivedDefaultMethod", .Data = function (x, ...) 
+UseMethod("mean"), target = new("signature", .Data = "ANY", names = "x", package = "methods"), defined = new("signature", .Data = "ANY", names = "x", package = "methods"), generic = "mean"), skeleton = (new("derivedDefaultMethod", .Data = function (x, ...) 
+UseMethod("mean"), target = new("signature", .Data = "ANY", names = "x", package = "methods"), defined = new("signature", .Data = "ANY", names = "x", package = "methods"), generic = "mean"))(x, ...)), fun.max = NULL, fun.min = NULL, fun.args = list(), na.rm = FALSE, orientation = NA
+position_identity 
+<ggproto object: Class CoordFlip, CoordCartesian, Coord, gg>
+    aspect: function
+    backtransform_range: function
+    clip: on
+    default: FALSE
+    distance: function
+    expand: TRUE
+    is_free: function
+    is_linear: function
+    labels: function
+    limits: list
+    modify_scales: function
+    range: function
+    render_axis_h: function
+    render_axis_v: function
+    render_bg: function
+    render_fg: function
+    setup_data: function
+    setup_layout: function
+    setup_panel_guides: function
+    setup_panel_params: function
+    setup_params: function
+    train_panel_guides: function
+    transform: function
+    super:  <ggproto object: Class CoordFlip, CoordCartesian, Coord, gg>
