@@ -1,7 +1,7 @@
 # Understanding the Indicators of World Happiness
     by Kristen Goh and Jonathan Goh
 
-**Project Goal**
+**Project Goal**  
    	▪ Understand how happiness differs in countries and regions around the world  
     ▪ Analyze potential country developement indicators that influence happiness  
  
